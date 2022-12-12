@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: moduleChecker
+github:
+  organization: micronaut-projects
