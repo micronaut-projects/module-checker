@@ -1,7 +1,7 @@
 name: "Generate report"
 on:
   schedule:
-    - cron: "*/15 0 * * *" # every 15 minutes for testing
+    - cron: "*/15 * * * *" # every 15 minutes for testing
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,9 +15,11 @@ jobs:
       - name: Build with Gradle
         run: |
           ./gradlew shadowJar
-      - name: Run report
+      - name: Rebuild README.md
         run: |
-          java -jar build/libs/module-checker-0.1-all.jar > README.md
+          cat INSTRUCTIONS.md > README.md
+          echo "---" >> README.md
+          java -jar build/libs/module-checker-0.1-all.jar -m >> README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4.15.4
