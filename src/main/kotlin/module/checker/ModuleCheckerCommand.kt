@@ -20,11 +20,31 @@ class ModuleCheckerCommand : Runnable {
     private var verbose: Boolean = false
 
     override fun run() {
+        val skipRepos = listOf(
+            "micronaut-core",
+            "micronaut-starter-ui",
+            "micronaut-lambda-todo",
+            "micronaut-project-template",
+            "micronaut-build-plugins",
+            "micronaut-build",
+            "micronaut-comparisons",
+            "micronaut-crac-tests",
+            "micronaut-docs",
+            "micronaut-docs-deploy",
+            "micronaut-docs-index",
+            "micronaut-examples",
+            "micronaut-fuzzing",
+            "micronaut-guides",
+            "micronaut-guides-old",
+            "micronaut-guides-poc",
+            "micronaut-oauth2",
+            "micronaut-profiles",
+        )
         val repos = api.fetchRepos(1)
             .filterNotNull()
             .filter { !it.archived }
             .filter { it.name.startsWith("micronaut-") }
-            .filter { it.name != "micronaut-core" }
+            .filter { !skipRepos.contains(it.name) }
         val width = repos.maxOf { it.name.length }
         repos
             .asSequence()
