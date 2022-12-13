@@ -1,7 +1,7 @@
 name: "Generate report"
 on:
   schedule:
-    - cron: "*/15 * * * *" # every 15 minutes for testing
+    - cron: "*/10 * * * *" # every 10 minutes for testing
 jobs:
   build:
     runs-on: ubuntu-latest

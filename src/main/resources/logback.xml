@@ -14,5 +14,6 @@
     </root>
 
     <logger name="io.micronaut.retry.intercept" level="OFF"/>
+    <logger name="io.micronaut.context.env" level="OFF"/>
 
 </configuration>

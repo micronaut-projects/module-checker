@@ -52,7 +52,11 @@ class ModuleCheckerCommand : Runnable {
             .filter { !skipRepos.contains(it.name) }
         val width = repos.maxOf { it.name.length }
         if (markdown) {
-            println("Run at ${ZonedDateTime.now().format(DateTimeFormatter.ISO_INSTANT)}")
+            println()
+            println("---")
+            println()
+            println("### Run at ${ZonedDateTime.now().format(DateTimeFormatter.RFC_1123_DATE_TIME)}")
+            println()
             println("| | Repository | Settings Version | Status | Micronaut Version |")
             println("| --- | --- | --- | --- | --- |")
         }
