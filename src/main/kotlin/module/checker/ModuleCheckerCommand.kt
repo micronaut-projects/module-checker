@@ -84,11 +84,10 @@ class ModuleCheckerCommand : Runnable {
 
     fun settingsVersion(repo: GithubRepo) =
         api.file(QueryBean(repo.name, "settings.gradle"))?.let { settings ->
-            Regex("id [\"']io.micronaut.build.shared.settings[\"'] version [\"']([^'\"]+)[\"']").find(settings)?.groups?.get(1)?.value
+            Regex("id[( ][\"']io.micronaut.build.shared.settings[\"'][)]? version [\"']([^'\"]+)[\"']").find(settings)?.groups?.get(1)?.value
         } ?: api.file(QueryBean(repo.name, "settings.gradle.kts"))?.let { settings ->
             Regex("id\\(\"io.micronaut.build.shared.settings\"\\) version \"([^\"]+)\"").find(settings)?.groups?.get(1)?.value
-        } ?: "🤔"
-
+        } ?: "unknown"
 
     fun micronautVersion(repo: GithubRepo) =
         api.file(QueryBean(repo.name, "gradle.properties"))?.let {
