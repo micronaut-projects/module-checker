@@ -21,7 +21,7 @@ jobs:
           java -jar build/libs/module-checker-0.1-all.jar -m >> README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: stefanzweifel/git-auto-commit-action@v4.15.4
+      - uses: stefanzweifel/git-auto-commit-action@v4.16.0
         with:
           commit_message: Update README with latest report
           commit_user_name: micronaut-build
