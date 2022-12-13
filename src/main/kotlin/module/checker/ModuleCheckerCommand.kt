@@ -22,6 +22,7 @@ class ModuleCheckerCommand : Runnable {
     override fun run() {
         val repos = api.fetchRepos(1)
             .filterNotNull()
+            .filter { !it.archived }
             .filter { it.name.startsWith("micronaut-") }
             .filter { it.name != "micronaut-core" }
         val width = repos.maxOf { it.name.length }
