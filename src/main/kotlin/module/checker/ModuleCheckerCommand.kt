@@ -40,6 +40,8 @@ class ModuleCheckerCommand : Runnable {
                 .fg(if (version == "4.0.0-SNAPSHOT") Ansi.Color.GREEN else Ansi.Color.RED)
                 .a(repo.name.padEnd(width))
                 .a("\t")
+                .a(settingsVersion(repo))
+                .a("\t")
                 .apply {
                     if (latestJavaCi == "success") {
                         it.a("✅")
@@ -54,6 +56,14 @@ class ModuleCheckerCommand : Runnable {
                 .a(version)
         )
     }
+
+    fun settingsVersion(repo: GithubRepo) =
+        api.file(QueryBean(repo.name, "settings.gradle"))?.let { settings ->
+            Regex("id [\"']io.micronaut.build.shared.settings[\"'] version [\"']([^'\"]+)[\"']").find(settings)?.groups?.get(1)?.value
+        } ?: api.file(QueryBean(repo.name, "settings.gradle.kts"))?.let { settings ->
+            Regex("id\\(\"io.micronaut.build.shared.settings\"\\) version \"([^\"]+)\"").find(settings)?.groups?.get(1)?.value
+        } ?: "🤔"
+
 
     fun micronautVersion(repo: GithubRepo) =
         api.file(QueryBean(repo.name, "gradle.properties"))?.let {
