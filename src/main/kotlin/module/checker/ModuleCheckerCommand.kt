@@ -53,29 +53,33 @@ class ModuleCheckerCommand : Runnable {
     }
 
     fun process(repo: GithubRepo, width: Int) {
-        val version = micronautVersion(repo)
-        val actions = api.actions(QueryBean(repo.name))
-        val latestJavaCi = actions?.latestJavaCi()
-        println(
-            ansi()
-                .fg(if (version == "4.0.0-SNAPSHOT") Ansi.Color.GREEN else Ansi.Color.RED)
-                .a(repo.name.padEnd(width))
-                .a("\t")
-                .a(settingsVersion(repo))
-                .a("\t")
-                .apply {
-                    if (latestJavaCi == "success") {
-                        it.a("✅")
-                    } else if (latestJavaCi == "failure") {
-                        it.a("❌")
-                    } else {
-                        it.a("❔")
+        try {
+            val version = micronautVersion(repo)
+            val actions = api.actions(QueryBean(repo.name))
+            val latestJavaCi = actions?.latestJavaCi()
+            println(
+                ansi()
+                    .fg(if (version == "4.0.0-SNAPSHOT") Ansi.Color.GREEN else Ansi.Color.RED)
+                    .a(repo.name.padEnd(width))
+                    .a("\t")
+                    .a(settingsVersion(repo))
+                    .a("\t")
+                    .apply {
+                        if (latestJavaCi == "success") {
+                            it.a("✅")
+                        } else if (latestJavaCi == "failure") {
+                            it.a("❌")
+                        } else {
+                            it.a("❔")
+                        }
+                        it.reset()
                     }
-                    it.reset()
-                }
-                .a("\t")
-                .a(version)
-        )
+                    .a("\t")
+                    .a(version)
+            )
+        } catch (e: Exception) {
+            println("Exception " + e.javaClass.simpleName + " for repo " + repo.name);
+        }
     }
 
     fun settingsVersion(repo: GithubRepo) =
