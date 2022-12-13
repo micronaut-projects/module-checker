@@ -18,7 +18,6 @@ jobs:
       - name: Rebuild README.md
         run: |
           cat RUNNING.md > README.md
-          echo "---" >> README.md
           java -jar build/libs/module-checker-0.1-all.jar -m >> README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
