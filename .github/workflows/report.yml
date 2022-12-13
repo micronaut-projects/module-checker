@@ -1,0 +1,26 @@
+name: "Generate report"
+on:
+  schedule:
+    - cron: "*/15 0 * * *" # every 15 minutes for testing
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - uses: actions/checkout@v3
+      - name: Build with Gradle
+        run: |
+          ./gradlew shadowJar
+      - name: Run report
+        run: |
+          java -jar build/libs/module-checker-0.1-all.jar > README.md
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: stefanzweifel/git-auto-commit-action@v4.15.4
+        with:
+          commit_message: Update README with latest report
+          commit_user_name: micronaut-build
