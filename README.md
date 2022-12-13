@@ -10,9 +10,11 @@ Run with:
 GITHUB_TOKEN=ghp_.... ./gradlew run  
 ```
 
-Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the latest Java CI is passing (a cross if failing), and the version of micronaut that the master branch is using. ---
-[36m16:02:18.534[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mi.m.context.env.DefaultEnvironment[0;39m - Established active environments: [cli]
-Run at 2022-12-13T16:02:21.058625314Z
+Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the latest Java CI is passing (a cross if failing), and the version of micronaut that the master branch is using. 
+---
+
+### Run at Tue, 13 Dec 2022 16:24:43 GMT
+
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
 |  | micronaut-acme |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-acme/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-acme/actions) | ✅ 4.0.0-SNAPSHOT |
