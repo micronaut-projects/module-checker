@@ -53,6 +53,7 @@ class ModuleCheckerCommand : Runnable {
         val width = repos.maxOf { it.name.length }
         if (markdown) {
             println()
+            println()
             println("---")
             println()
             println("### Run at ${ZonedDateTime.now().format(DateTimeFormatter.RFC_1123_DATE_TIME)}")
