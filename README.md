@@ -1,3 +1,9 @@
+## Generate Github Token Token
+
+[Generate a token](https://github.com/settings/tokens/new) with scope _Access public repositories_ `public_repo`.
+
+## Run
+
 Run with:
 
 ```

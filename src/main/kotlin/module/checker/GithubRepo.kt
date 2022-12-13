@@ -7,5 +7,6 @@ import io.micronaut.serde.annotation.Serdeable
 data class GithubRepo(
     val name: String,
     val url: String,
+    val archived: Boolean,
     @field:JsonProperty("default_branch") val defaultBranch: String
 )
