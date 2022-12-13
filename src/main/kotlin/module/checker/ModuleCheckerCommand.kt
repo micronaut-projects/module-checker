@@ -6,6 +6,11 @@ import org.fusesource.jansi.Ansi
 import org.fusesource.jansi.Ansi.ansi
 import picocli.CommandLine.Command
 import picocli.CommandLine.Option
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
+
+private const val REQUIRED_SETTINGS_VERSION = "6.1.1"
+private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
 
 @Command(
     name = "module-checker", description = ["..."],
@@ -16,8 +21,8 @@ class ModuleCheckerCommand : Runnable {
     @Inject
     lateinit var api: GithubApiClient
 
-    @Option(names = ["-v", "--verbose"], description = ["..."])
-    private var verbose: Boolean = false
+    @Option(names = ["-m", "--markdown"], description = ["outputs markdown instead of ANSI text"])
+    private var markdown: Boolean = false
 
     override fun run() {
         val skipRepos = listOf(
@@ -46,6 +51,11 @@ class ModuleCheckerCommand : Runnable {
             .filter { it.name.startsWith("micronaut-") }
             .filter { !skipRepos.contains(it.name) }
         val width = repos.maxOf { it.name.length }
+        if (markdown) {
+            println("Run at ${ZonedDateTime.now().format(DateTimeFormatter.ISO_INSTANT)}")
+            println("| | Repository | Settings Version | Status | Micronaut Version |")
+            println("| --- | --- | --- | --- | --- |")
+        }
         repos
             .asSequence()
             .sortedBy { it.name }
@@ -57,30 +67,41 @@ class ModuleCheckerCommand : Runnable {
             val version = micronautVersion(repo)
             val actions = api.actions(QueryBean(repo.name))
             val latestJavaCi = actions?.latestJavaCi()
-            println(
-                ansi()
-                    .fg(if (version == "4.0.0-SNAPSHOT") Ansi.Color.GREEN else Ansi.Color.RED)
-                    .a(repo.name.padEnd(width))
-                    .a("\t")
-                    .a(settingsVersion(repo))
-                    .a("\t")
-                    .apply {
-                        if (latestJavaCi == "success") {
-                            it.a("✅")
-                        } else if (latestJavaCi == "failure") {
-                            it.a("❌")
-                        } else {
-                            it.a("❔")
-                        }
-                        it.reset()
-                    }
-                    .a("\t")
-                    .a(version)
-            )
+            val settingsVersion = settingsVersion(repo)
+
+            println(if (markdown) markdownOutput(version, repo, settingsVersion, latestJavaCi) else ansiOutput(version, repo, width, latestJavaCi, settingsVersion))
         } catch (e: Exception) {
             println("Exception " + e.javaClass.simpleName + " for repo " + repo.name);
         }
     }
+
+    private fun markdownOutput(version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
+        "| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | ${repo.name} | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |"
+
+    private fun ansiOutput(
+        version: String?,
+        repo: GithubRepo,
+        width: Int,
+        latestJavaCi: String?,
+        settingsVersion: String?
+    ): Ansi? = ansi()
+        .fg(if (version == REQUIRED_MICRONAUT_VERSION) Ansi.Color.GREEN else Ansi.Color.RED)
+        .a(repo.name.padEnd(width))
+        .a("\t")
+        .a(settingsVersion)
+        .a("\t")
+        .apply {
+            if (latestJavaCi == "success") {
+                it.a("✅")
+            } else if (latestJavaCi == "failure") {
+                it.a("❌")
+            } else {
+                it.a("❔")
+            }
+            it.reset()
+        }
+        .a("\t")
+        .a(version)
 
     fun settingsVersion(repo: GithubRepo) =
         api.file(QueryBean(repo.name, "settings.gradle"))?.let { settings ->
