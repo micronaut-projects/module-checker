@@ -17,7 +17,7 @@ import io.micronaut.http.client.annotation.Client
 )
 interface GithubApiClient {
 
-    @Get("/orgs/\${github.organization}/repos?per_page=100&page={page}")
+    @Get("/orgs/\${github.organization}/repos?per_page=10&page={page}")
     fun fetchRepos(page: Int): List<GithubRepo?>
 
     @Get("/repos/\${github.organization}/{repo}/contents/{path}")

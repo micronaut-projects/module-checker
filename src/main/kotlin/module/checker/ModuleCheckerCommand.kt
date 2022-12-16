@@ -45,12 +45,6 @@ class ModuleCheckerCommand : Runnable {
             "micronaut-oauth2",
             "micronaut-profiles",
         )
-        val repos = api.fetchRepos(1)
-            .filterNotNull()
-            .filter { !it.archived }
-            .filter { it.name.startsWith("micronaut-") }
-            .filter { !skipRepos.contains(it.name) }
-        val width = repos.maxOf { it.name.length }
         if (markdown) {
             println()
             println()
@@ -61,13 +55,26 @@ class ModuleCheckerCommand : Runnable {
             println("| | Repository | Settings Version | Status | Micronaut Version |")
             println("| --- | --- | --- | --- | --- |")
         }
-        repos
-            .asSequence()
-            .sortedBy { it.name }
-            .forEach { process(it, width) }
+        val repos = repos()
+            .filterNotNull()
+            .filter { !it.archived }
+            .filter { it.name.startsWith("micronaut-") }
+            .filter { !skipRepos.contains(it.name) }
+        repos.forEach { process(it, 40) }
     }
 
-    fun process(repo: GithubRepo, width: Int) {
+    private fun repos(): Sequence<GithubRepo?> {
+        var pageNo = 1
+        return generateSequence(api.fetchRepos(pageNo++)) {
+            if (it.isNotEmpty()) {
+                api.fetchRepos(pageNo++)
+            } else {
+                null
+            }
+        }.flatten()
+    }
+
+    private fun process(repo: GithubRepo, width: Int) {
         try {
             val version = micronautVersion(repo)
             val actions = api.actions(QueryBean(repo.name))
@@ -81,7 +88,7 @@ class ModuleCheckerCommand : Runnable {
     }
 
     private fun markdownOutput(version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
-        "| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | ${repo.name} | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |"
+        "| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | [${repo.name}](https://github.com/micronaut-projects/${repo.name}) | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |"
 
     private fun ansiOutput(
         version: String?,
