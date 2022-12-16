@@ -14,12 +14,12 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Fri, 16 Dec 2022 12:11:33 GMT
+### Run at Fri, 16 Dec 2022 15:14:50 GMT
 
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
 |  | [micronaut-test](https://github.com/micronaut-projects/micronaut-test) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-test/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-kotlin](https://github.com/micronaut-projects/micronaut-kotlin) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-kotlin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kotlin/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-kotlin](https://github.com/micronaut-projects/micronaut-kotlin) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-kotlin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kotlin/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) |  3.7.0 |
 |  | [micronaut-liquibase](https://github.com/micronaut-projects/micronaut-liquibase) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-liquibase/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-liquibase/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) | ✅ 4.0.0-SNAPSHOT |
