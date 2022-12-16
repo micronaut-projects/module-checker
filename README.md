@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Fri, 16 Dec 2022 06:07:52 GMT
+### Run at Fri, 16 Dec 2022 10:50:39 GMT
 
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
@@ -37,11 +37,11 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | micronaut-gcp |  5.3.15 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) |  3.7.4 |
 |  | micronaut-gradle-plugin | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-gradle-plugin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gradle-plugin/actions) |  3.2.0 |
 | 💚 | micronaut-graphql | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-graphql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-graphql/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | micronaut-groovy |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-groovy/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-groovy/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | micronaut-groovy | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-groovy/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-groovy/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | micronaut-grpc |  5.3.15 | [![Build Status](https://github.com/micronaut-projects/micronaut-grpc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-grpc/actions) |  3.7.3 |
 |  | micronaut-hibernate-validator |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-hibernate-validator/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-hibernate-validator/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | micronaut-ignite |  unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-ignite/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-ignite/actions) |  2.0.1 |
-|  | micronaut-jackson-xml |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-jackson-xml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jackson-xml/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | micronaut-jackson-xml | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-jackson-xml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jackson-xml/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | micronaut-jaxrs | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-jaxrs/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jaxrs/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | micronaut-jms |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-jms/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jms/actions) |  3.7.4 |
 | 💚 | micronaut-jmx | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-jmx/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jmx/actions) | ✅ 4.0.0-SNAPSHOT |
