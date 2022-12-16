@@ -6,6 +6,7 @@ import org.fusesource.jansi.Ansi
 import org.fusesource.jansi.Ansi.ansi
 import picocli.CommandLine.Command
 import picocli.CommandLine.Option
+import java.lang.Appendable
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
@@ -56,12 +57,14 @@ class ModuleCheckerCommand : Runnable {
             println("| | Repository | Settings Version | Status | Micronaut Version |")
             println("| --- | --- | --- | --- | --- |")
         }
-        val repos = repos()
+        repos()
             .filterNotNull()
             .filter { !it.archived }
             .filter { it.name.startsWith("micronaut-") }
             .filter { !skipRepos.contains(it.name) }
-        repos.forEach { process(it, 40) }
+            .map { process(it) }
+            .sortedBy { it.first }
+            .forEach { println(it.second) }
     }
 
     private fun repos(): Sequence<GithubRepo?> {
@@ -75,21 +78,21 @@ class ModuleCheckerCommand : Runnable {
         }.flatten()
     }
 
-    private fun process(repo: GithubRepo, width: Int) {
+    private fun process(repo: GithubRepo, width: Int = 40): Pair<String, Appendable?> {
         try {
             val version = micronautVersion(repo)
             val actions = api.actions(QueryBean(repo.name))
             val latestJavaCi = actions?.latestJavaCi()
             val settingsVersion = settingsVersion(repo)
 
-            println(if (markdown) markdownOutput(version, repo, settingsVersion, latestJavaCi) else ansiOutput(version, repo, width, latestJavaCi, settingsVersion))
+            return repo.name to (if (markdown) markdownOutput(version, repo, settingsVersion, latestJavaCi) else ansiOutput(version, repo, width, latestJavaCi, settingsVersion))
         } catch (e: Exception) {
-            println("Exception " + e.javaClass.simpleName + " for repo " + repo.name);
+            return repo.name to StringBuilder("Exception " + e.javaClass.simpleName + " for repo " + repo.name);
         }
     }
 
     private fun markdownOutput(version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
-        "| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | [${repo.name}](https://github.com/micronaut-projects/${repo.name}) | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |"
+        StringBuilder("| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | [${repo.name}](https://github.com/micronaut-projects/${repo.name}) | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
 
     private fun ansiOutput(
         version: String?,
