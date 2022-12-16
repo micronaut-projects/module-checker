@@ -11,6 +11,7 @@ import java.time.format.DateTimeFormatter
 
 private const val REQUIRED_SETTINGS_VERSION = "6.1.1"
 private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
+private const val PAGE_SIZE = 50
 
 @Command(
     name = "module-checker", description = ["..."],
@@ -65,9 +66,9 @@ class ModuleCheckerCommand : Runnable {
 
     private fun repos(): Sequence<GithubRepo?> {
         var pageNo = 1
-        return generateSequence(api.fetchRepos(pageNo++)) {
+        return generateSequence(api.fetchRepos(PAGE_SIZE, pageNo++)) {
             if (it.isNotEmpty()) {
-                api.fetchRepos(pageNo++)
+                api.fetchRepos(PAGE_SIZE, pageNo++)
             } else {
                 null
             }
