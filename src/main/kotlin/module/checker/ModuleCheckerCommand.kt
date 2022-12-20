@@ -70,41 +70,50 @@ class ModuleCheckerCommand : Runnable {
             println("---")
             println("### Experimental dependency graph")
             println("")
-            println("Only includes repositories that use importMicronautCatalog, and excludes micronaut-core as that's a given")
+            println("Only includes repositories that use importMicronautCatalog, and excludes micronaut-core as that's a given.")
+            println("Directly reciprocal dependencies are marked in red.")
             println("")
             println("```mermaid")
             println("graph LR")
-            repos()
+            val dependencyMap = repos()
                 .filterNotNull()
                 .filter { !it.archived }
                 .filter { it.name.startsWith("micronaut-") }
                 .filter { !skipRepos.contains(it.name) }
-                .map { Association(it.name, api) }
-                .forEach { assoc ->
-                    assoc.dependsOn.forEach {
-                        println("    ${assoc.name} --> $it")
+                .groupBy({ it.name }, { extractDependencySet(it) })
+                .mapValues { it.value.flatten().toSet() }
+
+            val frequency = dependencyMap.values.flatMap { it.toList() }.groupingBy { it }.eachCount()
+
+            val reciprocal = mutableListOf<Int>()
+
+            var idx = 0
+            dependencyMap.forEach { (name, dependencies) ->
+                dependencies.forEach {
+                    println("    $name -${"-".repeat(frequency.get(it) ?:1)}> $it")
+                    if (dependencyMap[it]?.contains(name) == true) {
+                        reciprocal.add(idx)
                     }
+                    idx++
                 }
+            }
+            if (reciprocal.isNotEmpty()) {
+                println("    linkStyle ${reciprocal.joinToString(",")} stroke:red, stroke-width:4px")
+            }
             println("```")
         }
     }
 
-    private class Association {
-        val name: String
-        val dependsOn: Set<String>
-        constructor(name: String, api: GithubApiClient) {
-            this.name = name
-            dependsOn = (api.file(QueryBean(name, "settings.gradle.kts")).let { file ->
-                file?.lines()?.filter { it.contains("importMicronautCatalog(\"") }
-                    ?.map { it.substringAfter("importMicronautCatalog(\"").substringBefore("\")") }
-                    ?.toSet()
-            } ?: api.file(QueryBean(name, "settings.gradle")).let { file ->
-                file?.lines()?.filter { it.contains("importMicronautCatalog(\"") }
-                    ?.map { it.substringAfter("importMicronautCatalog(\"").substringBefore("\")") }
-                    ?.toSet()
-            } ?: emptySet())
-        }
-    }
+    private fun extractDependencySet(repo: GithubRepo) =
+        (api.file(QueryBean(repo.name, "settings.gradle.kts")).let { file ->
+            file?.lines()?.filter { it.contains("importMicronautCatalog(\"") }
+                ?.map { it.substringAfter("importMicronautCatalog(\"").substringBefore("\")") }
+                ?.toSet()
+        } ?: api.file(QueryBean(repo.name, "settings.gradle")).let { file ->
+            file?.lines()?.filter { it.contains("importMicronautCatalog(\"") }
+                ?.map { it.substringAfter("importMicronautCatalog(\"").substringBefore("\")") }
+                ?.toSet()
+        } ?: emptySet());
 
     private fun repos(): Sequence<GithubRepo?> {
         var pageNo = 1
