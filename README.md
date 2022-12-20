@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Tue, 20 Dec 2022 18:09:05 GMT
+### Run at Tue, 20 Dec 2022 18:33:01 GMT
 
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-redis](https://github.com/micronaut-projects/micronaut-redis) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-redis/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-redis/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-rss](https://github.com/micronaut-projects/micronaut-rss) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-rss/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rss/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-rxjava2](https://github.com/micronaut-projects/micronaut-rxjava2) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava2/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava2/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-rxjava3](https://github.com/micronaut-projects/micronaut-rxjava3) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava3/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-rxjava3](https://github.com/micronaut-projects/micronaut-rxjava3) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava3/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-security](https://github.com/micronaut-projects/micronaut-security) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-security/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-security/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-serialization](https://github.com/micronaut-projects/micronaut-serialization) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-serialization/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-serialization/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-servlet](https://github.com/micronaut-projects/micronaut-servlet) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-servlet/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-servlet/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -109,7 +109,7 @@ graph LR
     micronaut-micrometer ------> micronaut-cache
     micronaut-micrometer ------------> micronaut-reactor
     micronaut-micrometer ----> micronaut-r2dbc
-    micronaut-micrometer ---> micronaut-rxjava2
+    micronaut-micrometer ----> micronaut-rxjava2
     micronaut-micrometer -----------------------> micronaut-serde
     micronaut-micrometer -------> micronaut-sql
     micronaut-sql ------> micronaut-cache
@@ -133,7 +133,7 @@ graph LR
     micronaut-acme -----------------------> micronaut-serde
     micronaut-openapi -------> micronaut-security
     micronaut-openapi -----------------------> micronaut-serde
-    micronaut-openapi ---> micronaut-rxjava2
+    micronaut-openapi ----> micronaut-rxjava2
     micronaut-openapi --> micronaut-rxjava3
     micronaut-openapi --> micronaut-groovy
     micronaut-openapi --> micronaut-validation
@@ -155,6 +155,7 @@ graph LR
     micronaut-servlet ------------> micronaut-reactor
     micronaut-servlet -------> micronaut-security
     micronaut-servlet ----> micronaut-session
+    micronaut-rxjava3 ----> micronaut-rxjava2
     micronaut-reactor ---> micronaut-tracing
     micronaut-reactor -----------------------> micronaut-serde
     micronaut-mqtt -----------------------> micronaut-serde
