@@ -65,6 +65,45 @@ class ModuleCheckerCommand : Runnable {
             .map { process(it) }
             .sortedBy { it.first }
             .forEach { println(it.second) }
+        if (markdown) {
+            println("")
+            println("---")
+            println("### Experimental dependency graph")
+            println("")
+            println("Only includes repositories that use importMicronautCatalog, and excludes micronaut-core as that's a given")
+            println("")
+            println("```mermaid")
+            println("graph LR")
+            repos()
+                .filterNotNull()
+                .filter { !it.archived }
+                .filter { it.name.startsWith("micronaut-") }
+                .filter { !skipRepos.contains(it.name) }
+                .map { Association(it.name, api) }
+                .forEach { assoc ->
+                    assoc.dependsOn.forEach {
+                        println("    ${assoc.name} --> $it")
+                    }
+                }
+            println("```")
+        }
+    }
+
+    private class Association {
+        val name: String
+        val dependsOn: Set<String>
+        constructor(name: String, api: GithubApiClient) {
+            this.name = name
+            dependsOn = (api.file(QueryBean(name, "settings.gradle.kts")).let { file ->
+                file?.lines()?.filter { it.contains("importMicronautCatalog(\"") }
+                    ?.map { it.substringAfter("importMicronautCatalog(\"").substringBefore("\")") }
+                    ?.toSet()
+            } ?: api.file(QueryBean(name, "settings.gradle")).let { file ->
+                file?.lines()?.filter { it.contains("importMicronautCatalog(\"") }
+                    ?.map { it.substringAfter("importMicronautCatalog(\"").substringBefore("\")") }
+                    ?.toSet()
+            } ?: emptySet())
+        }
     }
 
     private fun repos(): Sequence<GithubRepo?> {
