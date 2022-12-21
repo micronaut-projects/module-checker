@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Wed, 21 Dec 2022 06:08:04 GMT
+### Run at Wed, 21 Dec 2022 12:09:11 GMT
 
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
@@ -33,7 +33,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-discovery-client](https://github.com/micronaut-projects/micronaut-discovery-client) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-discovery-client/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-discovery-client/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-elasticsearch](https://github.com/micronaut-projects/micronaut-elasticsearch) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-elasticsearch/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-elasticsearch/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-email](https://github.com/micronaut-projects/micronaut-email) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-email/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-email/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) | ✅ 4.0.0-SNAPSHOT |
+|  | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-gcp](https://github.com/micronaut-projects/micronaut-gcp) |  5.3.15 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) |  3.7.4 |
 |  | [micronaut-gradle-plugin](https://github.com/micronaut-projects/micronaut-gradle-plugin) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-gradle-plugin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gradle-plugin/actions) |  3.2.0 |
 | 💚 | [micronaut-graphql](https://github.com/micronaut-projects/micronaut-graphql) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-graphql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-graphql/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -62,7 +62,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-oracle-cloud](https://github.com/micronaut-projects/micronaut-oracle-cloud) |  5.3.14 | [![Build Status](https://github.com/micronaut-projects/micronaut-oracle-cloud/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-oracle-cloud/actions) |  3.7.2 |
 | 💚 | [micronaut-picocli](https://github.com/micronaut-projects/micronaut-picocli) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-picocli/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-picocli/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-platform](https://github.com/micronaut-projects/micronaut-platform) |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-platform/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-platform/actions) |  UNKNOWN |
-|  | [micronaut-problem-json](https://github.com/micronaut-projects/micronaut-problem-json) |  5.3.15 | [![Build Status](https://github.com/micronaut-projects/micronaut-problem-json/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-problem-json/actions) |  3.6.3 |
+| 💚 | [micronaut-problem-json](https://github.com/micronaut-projects/micronaut-problem-json) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-problem-json/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-problem-json/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-pulsar](https://github.com/micronaut-projects/micronaut-pulsar) |  5.3.14 | [![Build Status](https://github.com/micronaut-projects/micronaut-pulsar/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-pulsar/actions) |  3.3.1 |
 |  | [micronaut-r2dbc](https://github.com/micronaut-projects/micronaut-r2dbc) |  unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-r2dbc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-r2dbc/actions) |  3.6.3 |
 | 💚 | [micronaut-rabbitmq](https://github.com/micronaut-projects/micronaut-rabbitmq) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-rabbitmq/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rabbitmq/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -94,11 +94,11 @@ Directly reciprocal dependencies are marked in red.
 ```mermaid
 graph LR
     micronaut-test ------> micronaut-data
-    micronaut-test -----------------------> micronaut-serde
+    micronaut-test ------------------------> micronaut-serde
     micronaut-test ---> micronaut-spring
     micronaut-test -------> micronaut-sql
     micronaut-kotlin ------------> micronaut-reactor
-    micronaut-liquibase -----------------------> micronaut-serde
+    micronaut-liquibase ------------------------> micronaut-serde
     micronaut-liquibase -------> micronaut-sql
     micronaut-flyway -------> micronaut-sql
     micronaut-elasticsearch -------> micronaut-security
@@ -110,29 +110,29 @@ graph LR
     micronaut-micrometer ------------> micronaut-reactor
     micronaut-micrometer ----> micronaut-r2dbc
     micronaut-micrometer ----> micronaut-rxjava2
-    micronaut-micrometer -----------------------> micronaut-serde
+    micronaut-micrometer ------------------------> micronaut-serde
     micronaut-micrometer -------> micronaut-sql
     micronaut-sql ------> micronaut-cache
     micronaut-sql ------> micronaut-data
     micronaut-sql -------> micronaut-micrometer
     micronaut-sql ------------> micronaut-reactor
     micronaut-sql ----> micronaut-r2dbc
-    micronaut-sql -----------------------> micronaut-serde
+    micronaut-sql ------------------------> micronaut-serde
     micronaut-sql ---> micronaut-spring
     micronaut-sql -----> micronaut-test
     micronaut-mongodb -------> micronaut-micrometer
-    micronaut-mongodb -----------------------> micronaut-serde
+    micronaut-mongodb ------------------------> micronaut-serde
     micronaut-redis ------> micronaut-cache
     micronaut-redis -------> micronaut-micrometer
-    micronaut-redis -----------------------> micronaut-serde
+    micronaut-redis ------------------------> micronaut-serde
     micronaut-redis ----> micronaut-session
     micronaut-rabbitmq -------> micronaut-micrometer
-    micronaut-rabbitmq -----------------------> micronaut-serde
-    micronaut-rss -----------------------> micronaut-serde
+    micronaut-rabbitmq ------------------------> micronaut-serde
+    micronaut-rss ------------------------> micronaut-serde
     micronaut-rss -----> micronaut-test
-    micronaut-acme -----------------------> micronaut-serde
+    micronaut-acme ------------------------> micronaut-serde
     micronaut-openapi -------> micronaut-security
-    micronaut-openapi -----------------------> micronaut-serde
+    micronaut-openapi ------------------------> micronaut-serde
     micronaut-openapi ----> micronaut-rxjava2
     micronaut-openapi --> micronaut-rxjava3
     micronaut-openapi --> micronaut-groovy
@@ -142,35 +142,36 @@ graph LR
     micronaut-openapi ---> micronaut-kotlin
     micronaut-security --> micronaut-multitenancy
     micronaut-security ------------> micronaut-reactor
-    micronaut-security -----------------------> micronaut-serde
+    micronaut-security ------------------------> micronaut-serde
     micronaut-security --> micronaut-servlet
     micronaut-security ----> micronaut-session
     micronaut-security ---> micronaut-views
-    micronaut-cache -----------------------> micronaut-serde
+    micronaut-cache ------------------------> micronaut-serde
     micronaut-nats -------> micronaut-micrometer
     micronaut-nats ------------> micronaut-reactor
-    micronaut-nats -----------------------> micronaut-serde
+    micronaut-nats ------------------------> micronaut-serde
     micronaut-jaxrs -------> micronaut-security
-    micronaut-jaxrs -----------------------> micronaut-serde
+    micronaut-jaxrs ------------------------> micronaut-serde
     micronaut-servlet ------------> micronaut-reactor
     micronaut-servlet -------> micronaut-security
     micronaut-servlet ----> micronaut-session
     micronaut-rxjava3 ----> micronaut-rxjava2
     micronaut-reactor ---> micronaut-tracing
-    micronaut-reactor -----------------------> micronaut-serde
-    micronaut-mqtt -----------------------> micronaut-serde
+    micronaut-reactor ------------------------> micronaut-serde
+    micronaut-mqtt ------------------------> micronaut-serde
     micronaut-mqtt -----> micronaut-test
-    micronaut-multitenancy -----------------------> micronaut-serde
+    micronaut-multitenancy ------------------------> micronaut-serde
     micronaut-multitenancy ------------> micronaut-reactor
+    micronaut-problem-json ------------------------> micronaut-serde
     micronaut-aot --> micronaut-picocli
     micronaut-serialization ------------> micronaut-reactor
     micronaut-email --> micronaut-aws
     micronaut-email ------------> micronaut-reactor
-    micronaut-email -----------------------> micronaut-serde
+    micronaut-email ------------------------> micronaut-serde
     micronaut-email ---> micronaut-views
     micronaut-microstream ------> micronaut-cache
     micronaut-microstream -------> micronaut-micrometer
-    micronaut-microstream -----------------------> micronaut-serde
+    micronaut-microstream ------------------------> micronaut-serde
     micronaut-test-resources ------> micronaut-data
     micronaut-test-resources --> micronaut-elasticsearch
     micronaut-test-resources --> micronaut-email
@@ -183,12 +184,12 @@ graph LR
     micronaut-test-resources --> micronaut-redis
     micronaut-test-resources ----> micronaut-r2dbc
     micronaut-test-resources -------> micronaut-security
-    micronaut-test-resources -----------------------> micronaut-serde
+    micronaut-test-resources ------------------------> micronaut-serde
     micronaut-test-resources -------> micronaut-sql
     micronaut-crac ------> micronaut-data
-    micronaut-crac -----------------------> micronaut-serde
+    micronaut-crac ------------------------> micronaut-serde
     micronaut-crac -------> micronaut-sql
     micronaut-session ------> micronaut-cache
-    micronaut-session -----------------------> micronaut-serde
+    micronaut-session ------------------------> micronaut-serde
     linkStyle 3,18,21,26,50,60 stroke:red, stroke-width:4px
 ```
