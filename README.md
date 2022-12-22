@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Thu, 22 Dec 2022 12:10:03 GMT
+### Run at Thu, 22 Dec 2022 18:07:42 GMT
 
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ graph LR
     micronaut-redis -------> micronaut-cache
     micronaut-redis --------> micronaut-micrometer
     micronaut-redis --------------------------> micronaut-serde
-    micronaut-redis ----> micronaut-session
+    micronaut-redis -----> micronaut-session
     micronaut-rabbitmq --------> micronaut-micrometer
     micronaut-rabbitmq --------------------------> micronaut-serde
     micronaut-rss --------------------------> micronaut-serde
@@ -150,7 +150,7 @@ graph LR
     micronaut-security --------------> micronaut-reactor
     micronaut-security --------------------------> micronaut-serde
     micronaut-security ---> micronaut-servlet
-    micronaut-security ----> micronaut-session
+    micronaut-security -----> micronaut-session
     micronaut-security ---> micronaut-views
     micronaut-cache --------------------------> micronaut-serde
     micronaut-nats --------> micronaut-micrometer
@@ -160,7 +160,7 @@ graph LR
     micronaut-jaxrs --------------------------> micronaut-serde
     micronaut-servlet --------------> micronaut-reactor
     micronaut-servlet -------> micronaut-security
-    micronaut-servlet ----> micronaut-session
+    micronaut-servlet -----> micronaut-session
     micronaut-rxjava3 -----> micronaut-rxjava2
     micronaut-reactor ----> micronaut-tracing
     micronaut-reactor --------------------------> micronaut-serde
@@ -171,6 +171,7 @@ graph LR
     micronaut-mqtt -----> micronaut-test
     micronaut-multitenancy --------------------------> micronaut-serde
     micronaut-multitenancy --------------> micronaut-reactor
+    micronaut-multitenancy -----> micronaut-session
     micronaut-problem-json --------------------------> micronaut-serde
     micronaut-aot --> micronaut-picocli
     micronaut-serialization --------------> micronaut-reactor
