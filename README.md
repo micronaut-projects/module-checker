@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 2 Jan 2023 06:08:21 GMT
+### Run at Mon, 2 Jan 2023 12:09:12 GMT
 
 | | Repository | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-serialization](https://github.com/micronaut-projects/micronaut-serialization) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-serialization/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-serialization/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-servlet](https://github.com/micronaut-projects/micronaut-servlet) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-servlet/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-servlet/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-session](https://github.com/micronaut-projects/micronaut-session) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-session/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-session/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) |  3.7.0 |
+| 💚 | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-sql](https://github.com/micronaut-projects/micronaut-sql) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-sql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-sql/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) |  5.3.9 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) |  3.8.1-SNAPSHOT |
 | 💚 | [micronaut-test](https://github.com/micronaut-projects/micronaut-test) | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-test/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -98,6 +98,8 @@ graph LR
     micronaut-test ----> micronaut-spring
     micronaut-test --------> micronaut-sql
     micronaut-kotlin --------------> micronaut-reactor
+    micronaut-spring --------> micronaut-cache
+    micronaut-spring ----> micronaut-views
     micronaut-liquibase -----------------------------> micronaut-serde
     micronaut-liquibase --------> micronaut-sql
     micronaut-flyway --------> micronaut-sql
@@ -106,18 +108,18 @@ graph LR
     micronaut-graphql --------> micronaut-security
     micronaut-grpc --------------> micronaut-reactor
     micronaut-grpc -----> micronaut-tracing
-    micronaut-kafka -------> micronaut-cache
+    micronaut-kafka --------> micronaut-cache
     micronaut-kafka --------> micronaut-micrometer
     micronaut-kafka --------------> micronaut-reactor
     micronaut-kafka -------> micronaut-rxjava2
     micronaut-kafka -----------------------------> micronaut-serde
     micronaut-kafka -----> micronaut-tracing
-    micronaut-micrometer -------> micronaut-cache
+    micronaut-micrometer --------> micronaut-cache
     micronaut-micrometer -----> micronaut-r2dbc
     micronaut-micrometer -------> micronaut-rxjava2
     micronaut-micrometer -----------------------------> micronaut-serde
     micronaut-micrometer --------> micronaut-sql
-    micronaut-sql -------> micronaut-cache
+    micronaut-sql --------> micronaut-cache
     micronaut-sql ------> micronaut-data
     micronaut-sql --------> micronaut-micrometer
     micronaut-sql --------------> micronaut-reactor
@@ -127,7 +129,7 @@ graph LR
     micronaut-sql ----> micronaut-test
     micronaut-mongodb --------> micronaut-micrometer
     micronaut-mongodb -----------------------------> micronaut-serde
-    micronaut-redis -------> micronaut-cache
+    micronaut-redis --------> micronaut-cache
     micronaut-redis --------> micronaut-micrometer
     micronaut-redis -----------------------------> micronaut-serde
     micronaut-redis -----> micronaut-session
@@ -153,7 +155,7 @@ graph LR
     micronaut-security -----------------------------> micronaut-serde
     micronaut-security ----> micronaut-servlet
     micronaut-security -----> micronaut-session
-    micronaut-security ---> micronaut-views
+    micronaut-security ----> micronaut-views
     micronaut-views --------> micronaut-security
     micronaut-views -----------------------------> micronaut-serde
     micronaut-data --------------> micronaut-reactor
@@ -190,8 +192,8 @@ graph LR
     micronaut-email --> micronaut-aws
     micronaut-email --------------> micronaut-reactor
     micronaut-email -----------------------------> micronaut-serde
-    micronaut-email ---> micronaut-views
-    micronaut-microstream -------> micronaut-cache
+    micronaut-email ----> micronaut-views
+    micronaut-microstream --------> micronaut-cache
     micronaut-microstream --------> micronaut-micrometer
     micronaut-microstream -----------------------------> micronaut-serde
     micronaut-test-resources ------> micronaut-data
@@ -211,7 +213,7 @@ graph LR
     micronaut-crac ------> micronaut-data
     micronaut-crac -----------------------------> micronaut-serde
     micronaut-crac --------> micronaut-sql
-    micronaut-session -------> micronaut-cache
+    micronaut-session --------> micronaut-cache
     micronaut-session -----------------------------> micronaut-serde
-    linkStyle 3,23,25,26,31,58,60,61,68,78 stroke:red, stroke-width:4px
+    linkStyle 3,25,27,28,33,60,62,63,70,80 stroke:red, stroke-width:4px
 ```
