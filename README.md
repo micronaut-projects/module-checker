@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Wed, 4 Jan 2023 12:15:36 GMT
+### Run at Wed, 4 Jan 2023 18:07:37 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -53,7 +53,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-micrometer](https://github.com/micronaut-projects/micronaut-micrometer) | 5.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-micrometer/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-micrometer/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-microstream](https://github.com/micronaut-projects/micronaut-microstream) | 2.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-microstream/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-microstream/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-mongodb](https://github.com/micronaut-projects/micronaut-mongodb) | 5.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-mongodb/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-mongodb/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-mqtt](https://github.com/micronaut-projects/micronaut-mqtt) | 3.0.0-SNAPSHOT |  6.1.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-mqtt/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-mqtt/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-mqtt](https://github.com/micronaut-projects/micronaut-mqtt) | 3.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-mqtt/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-mqtt/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-multitenancy](https://github.com/micronaut-projects/micronaut-multitenancy) | 5.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-multitenancy/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-multitenancy/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-nats](https://github.com/micronaut-projects/micronaut-nats) | 4.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-nats/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-nats/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-neo4j](https://github.com/micronaut-projects/micronaut-neo4j) | 6.0.0-SNAPSHOT | ✅ 6.1.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-neo4j/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-neo4j/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -126,7 +126,7 @@ graph LR
     micronaut-sql -----> micronaut-r2dbc
     micronaut-sql -------------------------------> micronaut-serde
     micronaut-sql ----> micronaut-spring
-    micronaut-sql ----> micronaut-test
+    micronaut-sql ---> micronaut-test
     micronaut-mongodb --------> micronaut-micrometer
     micronaut-mongodb -------------------------------> micronaut-serde
     micronaut-redis --------> micronaut-cache
@@ -148,7 +148,7 @@ graph LR
     micronaut-openapi --> micronaut-groovy
     micronaut-openapi --> micronaut-validation
     micronaut-openapi -------> micronaut-data
-    micronaut-openapi ----> micronaut-test
+    micronaut-openapi ---> micronaut-test
     micronaut-openapi -----> micronaut-kotlin
     micronaut-security ---> micronaut-multitenancy
     micronaut-security ---------------> micronaut-reactor
@@ -183,7 +183,6 @@ graph LR
     micronaut-azure -------------------------------> micronaut-serde
     micronaut-azure ----> micronaut-servlet
     micronaut-mqtt -------------------------------> micronaut-serde
-    micronaut-mqtt ----> micronaut-test
     micronaut-r2dbc ---------------> micronaut-reactor
     micronaut-r2dbc --------> micronaut-rxjava2
     micronaut-r2dbc -------------------------------> micronaut-serde
@@ -223,5 +222,5 @@ graph LR
     micronaut-crac ---------> micronaut-sql
     micronaut-session --------> micronaut-cache
     micronaut-session -------------------------------> micronaut-serde
-    linkStyle 3,25,27,28,30,33,60,62,63,68,71,81,95,96 stroke:red, stroke-width:4px
+    linkStyle 3,25,27,28,30,33,60,62,63,68,71,81,94,95 stroke:red, stroke-width:4px
 ```
