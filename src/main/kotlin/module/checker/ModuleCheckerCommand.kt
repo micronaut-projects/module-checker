@@ -54,8 +54,8 @@ class ModuleCheckerCommand : Runnable {
             println()
             println("### Run at ${ZonedDateTime.now().format(DateTimeFormatter.RFC_1123_DATE_TIME)}")
             println()
-            println("| | Repository | Settings Version | Status | Micronaut Version |")
-            println("| --- | --- | --- | --- | --- |")
+            println("| | Repository | Project Version | Settings Version | Status | Micronaut Version |")
+            println("| --- | --- | --- | --- | --- | --- |")
         }
         repos()
             .filterNotNull()
@@ -128,21 +128,24 @@ class ModuleCheckerCommand : Runnable {
 
     private fun process(repo: GithubRepo, width: Int = 40): Pair<String, Appendable?> {
         try {
-            val version = micronautVersion(repo)
+            val props = properties(repo)
+            val projectVersion = projectVersion(props)
+            val version = micronautVersion(props, repo)
             val actions = api.actions(QueryBean(repo.name))
             val latestJavaCi = actions?.latestJavaCi()
             val settingsVersion = settingsVersion(repo)
 
-            return repo.name to (if (markdown) markdownOutput(version, repo, settingsVersion, latestJavaCi) else ansiOutput(version, repo, width, latestJavaCi, settingsVersion))
+            return repo.name to (if (markdown) markdownOutput(projectVersion, version, repo, settingsVersion, latestJavaCi) else ansiOutput(projectVersion, version, repo, width, latestJavaCi, settingsVersion))
         } catch (e: Exception) {
             return repo.name to StringBuilder("Exception " + e.javaClass.simpleName + " for repo " + repo.name);
         }
     }
 
-    private fun markdownOutput(version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
-        StringBuilder("| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | [${repo.name}](https://github.com/micronaut-projects/${repo.name}) | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
+    private fun markdownOutput(projectVersion: String, version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
+        StringBuilder("| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | [${repo.name}](https://github.com/micronaut-projects/${repo.name}) | $projectVersion | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
 
     private fun ansiOutput(
+        projectVersion: String,
         version: String?,
         repo: GithubRepo,
         width: Int,
@@ -151,6 +154,8 @@ class ModuleCheckerCommand : Runnable {
     ): Ansi? = ansi()
         .fg(if (version == REQUIRED_MICRONAUT_VERSION) Ansi.Color.GREEN else Ansi.Color.RED)
         .a(repo.name.padEnd(width))
+        .a("\t")
+        .a("[$projectVersion]")
         .a("\t")
         .a(settingsVersion)
         .a("\t")
@@ -174,8 +179,15 @@ class ModuleCheckerCommand : Runnable {
             Regex("id\\(\"io.micronaut.build.shared.settings\"\\) version \"([^\"]+)\"").find(settings)?.groups?.get(1)?.value
         } ?: "unknown"
 
-    fun micronautVersion(repo: GithubRepo) =
-        api.file(QueryBean(repo.name, "gradle.properties"))?.let {
+    fun properties(repo: GithubRepo) = api.file(QueryBean(repo.name, "gradle.properties"))
+
+    fun projectVersion(properties: String?) =
+        properties?.let { props ->
+            Regex("projectVersion=(.+)").find(props)?.groups?.get(1)?.value
+        } ?: "unknown"
+
+    fun micronautVersion(properties: String?, repo: GithubRepo) =
+        properties?.let {
             Regex("micronautVersion=(.+)").find(it)?.groups?.get(1)?.value
         } ?: api.file(QueryBean(repo.name, "gradle/libs.versions.toml"))?.let {
             Regex("micronaut[\\s]*=[\\s]*[\"'](.+)[\"']").find(it)?.groups?.get(1)?.value
