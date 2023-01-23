@@ -10,7 +10,7 @@ import java.lang.Appendable
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
-private const val REQUIRED_SETTINGS_VERSION = "6.1.1"
+private const val REQUIRED_SETTINGS_VERSION = "6.2.0"
 private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
 private const val PAGE_SIZE = 50
 
@@ -142,7 +142,12 @@ class ModuleCheckerCommand : Runnable {
     }
 
     private fun markdownOutput(projectVersion: String, version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
-        StringBuilder("| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""} | [${repo.name}](https://github.com/micronaut-projects/${repo.name}) | $projectVersion | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions) | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
+        StringBuilder("| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""}" +
+                " | [${repo.name}](https://github.com/micronaut-projects/${repo.name})" +
+                " | $projectVersion" +
+                " | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion" +
+                " | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions)" +
+                " | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
 
     private fun ansiOutput(
         projectVersion: String,
