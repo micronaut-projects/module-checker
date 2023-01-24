@@ -44,8 +44,10 @@ class ModuleCheckerCommand : Runnable {
             "micronaut-guides",
             "micronaut-guides-old",
             "micronaut-guides-poc",
+            "micronaut-maven-plugin",
             "micronaut-oauth2",
             "micronaut-profiles",
+            "micronaut-platform",
         )
         if (markdown) {
             println()
