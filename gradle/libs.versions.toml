@@ -3,7 +3,7 @@ micronaut = '3.7.4'
 jline = '3.21.0'
 
 # Gradle plugins
-micronaut-gradle-plugin = "3.5.3"
+micronaut-gradle-plugin = "3.7.0"
 kotlin-gradle-plugin = "1.7.22"
 
 [libraries]
