@@ -63,6 +63,7 @@ class ModuleCheckerCommand : Runnable {
             .filterNotNull()
             .filter { !it.archived }
             .filter { it.name.startsWith("micronaut-") }
+            .filter { !it.name.startsWith("micronaut-core-ghsa-") }
             .filter { !skipRepos.contains(it.name) }
             .map { process(it) }
             .sortedBy { it.first }
@@ -82,6 +83,7 @@ class ModuleCheckerCommand : Runnable {
                 .filter { !it.archived }
                 .filter { it.name.startsWith("micronaut-") }
                 .filter { !skipRepos.contains(it.name) }
+                .filter { !it.name.startsWith("micronaut-core-ghsa-") }
                 .groupBy({ it.name }, { extractDependencySet(it) })
                 .mapValues { it.value.flatten().toSet() }
 
@@ -136,7 +138,6 @@ class ModuleCheckerCommand : Runnable {
             val actions = api.actions(QueryBean(repo.name))
             val latestJavaCi = actions?.latestJavaCi()
             val settingsVersion = settingsVersion(repo)
-
             return repo.name to (if (markdown) markdownOutput(projectVersion, version, repo, settingsVersion, latestJavaCi) else ansiOutput(projectVersion, version, repo, width, latestJavaCi, settingsVersion))
         } catch (e: Exception) {
             return repo.name to StringBuilder("Exception " + e.javaClass.simpleName + " for repo " + repo.name);
