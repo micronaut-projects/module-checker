@@ -10,7 +10,6 @@ import java.lang.Appendable
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
-private const val REQUIRED_SETTINGS_VERSION = "6.2.0"
 private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
 private const val PAGE_SIZE = 50
 
@@ -59,15 +58,21 @@ class ModuleCheckerCommand : Runnable {
             println("| | Repository | Project Version | Settings Version | Status | Micronaut Version |")
             println("| --- | --- | --- | --- | --- | --- |")
         }
-        repos()
+        val processed = repos()
             .filterNotNull()
             .filter { !it.archived }
             .filter { it.name.startsWith("micronaut-") }
             .filter { !it.name.startsWith("micronaut-core-ghsa-") }
             .filter { !skipRepos.contains(it.name) }
             .map { process(it) }
-            .sortedBy { it.first }
-            .forEach { println(it.second) }
+        if (markdown) {
+            processed
+                .sortedBy { it.first }
+                .forEach { println(it.second) }
+        } else {
+            processed.forEach { println(it.second) }
+        }
+
         if (markdown) {
             println("")
             println("---")
@@ -145,10 +150,10 @@ class ModuleCheckerCommand : Runnable {
     }
 
     private fun markdownOutput(projectVersion: String, version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
-        StringBuilder("| ${if (settingsVersion == REQUIRED_SETTINGS_VERSION && version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""}" +
+        StringBuilder("| ${if (version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""}" +
                 " | [${repo.name}](https://github.com/micronaut-projects/${repo.name})" +
                 " | $projectVersion" +
-                " | ${if (settingsVersion == REQUIRED_SETTINGS_VERSION) "✅" else ""} $settingsVersion" +
+                " | $settingsVersion" +
                 " | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions)" +
                 " | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
 
@@ -160,7 +165,7 @@ class ModuleCheckerCommand : Runnable {
         latestJavaCi: String?,
         settingsVersion: String?
     ): Ansi? = ansi()
-        .fg(if (version == REQUIRED_MICRONAUT_VERSION) Ansi.Color.GREEN else Ansi.Color.RED)
+        .fg(if (version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") Ansi.Color.GREEN else Ansi.Color.RED)
         .a(repo.name.padEnd(width))
         .a("\t")
         .a("[$projectVersion]")
