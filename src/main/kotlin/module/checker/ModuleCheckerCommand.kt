@@ -9,9 +9,10 @@ import picocli.CommandLine.Option
 import java.lang.Appendable
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
+import kotlin.system.exitProcess
 
 private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
-private const val PAGE_SIZE = 100
+private const val PAGE_SIZE = 50
 
 @Command(
     name = "module-checker", description = ["..."],
@@ -128,13 +129,20 @@ class ModuleCheckerCommand : Runnable {
 
     private fun repos(): Sequence<GithubRepo?> {
         var pageNo = 1
-        return generateSequence(api.fetchRepos(PAGE_SIZE, pageNo++)) {
-            if (it.isNotEmpty()) {
-                api.fetchRepos(PAGE_SIZE, pageNo++)
-            } else {
-                null
-            }
-        }.flatten()
+        try {
+            val seed = api.fetchRepos(PAGE_SIZE, pageNo++)
+
+            return generateSequence(seed) {
+                if (it.isNotEmpty()) {
+                    api.fetchRepos(PAGE_SIZE, pageNo++)
+                } else {
+                    null
+                }
+            }.flatten()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            exitProcess(1)
+        }
     }
 
     private fun process(repo: GithubRepo, width: Int = 40): Pair<String, Appendable?> {
