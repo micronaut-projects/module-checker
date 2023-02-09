@@ -22,6 +22,7 @@ dependencies {
     implementation(libs.micronaut.http.client)
     implementation(libs.micronaut.serde.jackson)
     implementation(libs.micronaut.reactor)
+    implementation("io.micronaut.cache:micronaut-cache-caffeine")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
     implementation("io.micronaut.picocli:micronaut-picocli")
     implementation("jakarta.annotation:jakarta.annotation-api")

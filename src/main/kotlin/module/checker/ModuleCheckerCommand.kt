@@ -11,7 +11,7 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
-private const val PAGE_SIZE = 50
+private const val PAGE_SIZE = 100
 
 @Command(
     name = "module-checker", description = ["..."],
@@ -20,7 +20,7 @@ private const val PAGE_SIZE = 50
 class ModuleCheckerCommand : Runnable {
 
     @Inject
-    lateinit var api: GithubApiClient
+    lateinit var api: ApiService
 
     @Option(names = ["-m", "--markdown"], description = ["outputs markdown instead of ANSI text"])
     private var markdown: Boolean = false
@@ -111,6 +111,8 @@ class ModuleCheckerCommand : Runnable {
             }
             println("```")
         }
+        println("")
+        println("(Used a total of ${api.getCount()} API calls)")
     }
 
     private fun extractDependencySet(repo: GithubRepo) =
