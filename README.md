@@ -14,11 +14,11 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Sun, 19 Feb 2023 06:07:46 GMT
+### Run at Sun, 19 Feb 2023 12:08:58 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
-Exception ReadTimeoutException for repo micronaut-acme
+| 💚 | [micronaut-acme](https://github.com/micronaut-projects/micronaut-acme) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-acme/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-acme/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-aot](https://github.com/micronaut-projects/micronaut-aot) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-aot/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aot/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-aws](https://github.com/micronaut-projects/micronaut-aws) | 4.0.0-SNAPSHOT | 6.2.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-aws/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aws/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-azure](https://github.com/micronaut-projects/micronaut-azure) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-azure/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-azure/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -254,4 +254,4 @@ graph LR
     linkStyle 3,14,20,25,27,28,30,33,66,68,69,74,77,87,90,113,114,126,127,130 stroke:red, stroke-width:4px
 ```
 
-(Used a total of 289 API calls)
+(Used a total of 288 API calls)
