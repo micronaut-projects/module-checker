@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 20 Feb 2023 18:08:21 GMT
+### Run at Tue, 21 Feb 2023 00:26:45 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -25,9 +25,9 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-cache](https://github.com/micronaut-projects/micronaut-cache) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-cache/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cache/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-cassandra](https://github.com/micronaut-projects/micronaut-cassandra) | 6.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-cassandra/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cassandra/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-chatbots](https://github.com/micronaut-projects/micronaut-chatbots) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-chatbots/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-chatbots/actions) | ✅ 4.0.0-SNAPSHOT |
-Exception ReadTimeoutException for repo micronaut-coherence
+|  | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 3.8.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) |  3.8.3 |
 | 💚 | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-discovery-client](https://github.com/micronaut-projects/micronaut-discovery-client) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-discovery-client/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-discovery-client/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-elasticsearch](https://github.com/micronaut-projects/micronaut-elasticsearch) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-elasticsearch/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-elasticsearch/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-email](https://github.com/micronaut-projects/micronaut-email) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-email/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-email/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -72,7 +72,7 @@ Exception ReadTimeoutException for repo micronaut-coherence
 | 💚 | [micronaut-session](https://github.com/micronaut-projects/micronaut-session) | 1.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-session/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-session/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-sql](https://github.com/micronaut-projects/micronaut-sql) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-sql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-sql/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 3.8.6-SNAPSHOT | 5.4.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) |  3.8.5 |
+|  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 3.8.6-SNAPSHOT | 5.4.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) |  3.8.6-SNAPSHOT |
 | 💚 | [micronaut-test](https://github.com/micronaut-projects/micronaut-test) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-test/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-test-resources](https://github.com/micronaut-projects/micronaut-test-resources) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-test-resources/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test-resources/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-toml](https://github.com/micronaut-projects/micronaut-toml) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-toml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-toml/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -254,4 +254,4 @@ graph LR
     linkStyle 3,14,20,25,27,28,30,33,66,68,69,74,77,87,90,113,114,126,127,130 stroke:red, stroke-width:4px
 ```
 
-(Used a total of 289 API calls)
+(Used a total of 288 API calls)
