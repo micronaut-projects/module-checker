@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Thu, 2 Mar 2023 06:08:59 GMT
+### Run at Thu, 2 Mar 2023 12:30:21 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -148,7 +148,7 @@ graph LR
     micronaut-openapi ----------> micronaut-rxjava2
     micronaut-openapi --> micronaut-rxjava3
     micronaut-openapi ----> micronaut-groovy
-    micronaut-openapi --> micronaut-validation
+    micronaut-openapi ---> micronaut-validation
     micronaut-openapi -------> micronaut-data
     micronaut-openapi ----> micronaut-test
     micronaut-openapi ------> micronaut-kotlin
@@ -158,6 +158,7 @@ graph LR
     micronaut-security -----> micronaut-servlet
     micronaut-security -----> micronaut-session
     micronaut-security -----> micronaut-views
+    micronaut-security ---> micronaut-validation
     micronaut-views ---------> micronaut-security
     micronaut-views -------------------------------------> micronaut-serde
     micronaut-hibernate-validator -------------------------------------> micronaut-serde
@@ -252,7 +253,7 @@ graph LR
     micronaut-crac ----------> micronaut-sql
     micronaut-session --------> micronaut-cache
     micronaut-session -------------------------------------> micronaut-serde
-    linkStyle 3,15,21,26,28,29,31,34,67,69,70,75,78,88,91,114,115,127,128,131 stroke:red, stroke-width:4px
+    linkStyle 3,15,21,26,28,29,31,34,67,69,71,76,79,89,92,115,116,128,129,132 stroke:red, stroke-width:4px
 ```
 
 (Used a total of 288 API calls)
