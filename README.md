@@ -14,25 +14,25 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 6 Mar 2023 12:10:39 GMT
+### Run at Mon, 6 Mar 2023 19:11:33 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
 | 💚 | [micronaut-acme](https://github.com/micronaut-projects/micronaut-acme) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-acme/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-acme/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-aot](https://github.com/micronaut-projects/micronaut-aot) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-aot/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aot/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-aws](https://github.com/micronaut-projects/micronaut-aws) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-aws/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aws/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-azure](https://github.com/micronaut-projects/micronaut-azure) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-azure/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-azure/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-aws](https://github.com/micronaut-projects/micronaut-aws) | 4.0.0-SNAPSHOT | 6.3.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-aws/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aws/actions) | ✅ 4.0.0-SNAPSHOT |
+Exception ReadTimeoutException for repo micronaut-azure
 | 💚 | [micronaut-cache](https://github.com/micronaut-projects/micronaut-cache) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-cache/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cache/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-cassandra](https://github.com/micronaut-projects/micronaut-cassandra) | 6.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-cassandra/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cassandra/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-chatbots](https://github.com/micronaut-projects/micronaut-chatbots) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-chatbots/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-chatbots/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 3.8.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) |  3.8.3 |
 | 💚 | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.3.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-discovery-client](https://github.com/micronaut-projects/micronaut-discovery-client) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-discovery-client/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-discovery-client/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-elasticsearch](https://github.com/micronaut-projects/micronaut-elasticsearch) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-elasticsearch/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-elasticsearch/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-email](https://github.com/micronaut-projects/micronaut-email) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-email/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-email/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | 6.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-gcp](https://github.com/micronaut-projects/micronaut-gcp) | 5.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-gcp](https://github.com/micronaut-projects/micronaut-gcp) | 5.0.0-SNAPSHOT | 6.3.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-gradle-plugin](https://github.com/micronaut-projects/micronaut-gradle-plugin) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-gradle-plugin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gradle-plugin/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-graphql](https://github.com/micronaut-projects/micronaut-graphql) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-graphql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-graphql/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-groovy](https://github.com/micronaut-projects/micronaut-groovy) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-groovy/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-groovy/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -61,11 +61,11 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-pulsar](https://github.com/micronaut-projects/micronaut-pulsar) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-pulsar/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-pulsar/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-r2dbc](https://github.com/micronaut-projects/micronaut-r2dbc) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-r2dbc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-r2dbc/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-rabbitmq](https://github.com/micronaut-projects/micronaut-rabbitmq) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-rabbitmq/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rabbitmq/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-reactor](https://github.com/micronaut-projects/micronaut-reactor) | 3.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-reactor/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-reactor/actions) | ✅ 4.0.0-SNAPSHOT |
+|  | [micronaut-reactor](https://github.com/micronaut-projects/micronaut-reactor) | 3.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-reactor/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-reactor/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-redis](https://github.com/micronaut-projects/micronaut-redis) | 6.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-redis/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-redis/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-rss](https://github.com/micronaut-projects/micronaut-rss) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-rss/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rss/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-rxjava2](https://github.com/micronaut-projects/micronaut-rxjava2) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava2/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava2/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-rxjava3](https://github.com/micronaut-projects/micronaut-rxjava3) | 3.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava3/actions) | ✅ 4.0.0-SNAPSHOT |
+|  | [micronaut-rxjava3](https://github.com/micronaut-projects/micronaut-rxjava3) | 3.0.0-SNAPSHOT | 6.3.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava3/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-security](https://github.com/micronaut-projects/micronaut-security) | 4.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-security/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-security/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-serialization](https://github.com/micronaut-projects/micronaut-serialization) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-serialization/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-serialization/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-servlet](https://github.com/micronaut-projects/micronaut-servlet) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-servlet/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-servlet/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -104,7 +104,7 @@ graph LR
     micronaut-graphql ---------> micronaut-security
     micronaut-grpc -------------------> micronaut-reactor
     micronaut-grpc -----> micronaut-tracing
-    micronaut-grpc -------> micronaut-validation
+    micronaut-grpc --------> micronaut-validation
     micronaut-kafka --------> micronaut-cache
     micronaut-kafka ---------> micronaut-micrometer
     micronaut-kafka -------------------> micronaut-reactor
@@ -138,6 +138,7 @@ graph LR
     micronaut-aws -------------------------------------> micronaut-serde
     micronaut-aws ---------> micronaut-security
     micronaut-aws -----> micronaut-views
+    micronaut-aws --------> micronaut-validation
     micronaut-rss -------------------------------------> micronaut-serde
     micronaut-gcp -----------> micronaut-rxjava2
     micronaut-gcp -------------------------------------> micronaut-serde
@@ -149,7 +150,7 @@ graph LR
     micronaut-openapi -----------> micronaut-rxjava2
     micronaut-openapi --> micronaut-rxjava3
     micronaut-openapi ----> micronaut-groovy
-    micronaut-openapi -------> micronaut-validation
+    micronaut-openapi --------> micronaut-validation
     micronaut-openapi -------> micronaut-data
     micronaut-openapi ----> micronaut-test
     micronaut-openapi ------> micronaut-kotlin
@@ -159,7 +160,7 @@ graph LR
     micronaut-security -----> micronaut-servlet
     micronaut-security -----> micronaut-session
     micronaut-security -----> micronaut-views
-    micronaut-security -------> micronaut-validation
+    micronaut-security --------> micronaut-validation
     micronaut-views ---------> micronaut-security
     micronaut-views -------------------------------------> micronaut-serde
     micronaut-hibernate-validator -------------------------------------> micronaut-serde
@@ -171,7 +172,7 @@ graph LR
     micronaut-data ----------> micronaut-sql
     micronaut-data ------> micronaut-kotlin
     micronaut-data ----> micronaut-multitenancy
-    micronaut-data -------> micronaut-validation
+    micronaut-data --------> micronaut-validation
     micronaut-cache -------------------------------------> micronaut-serde
     micronaut-nats ---------> micronaut-micrometer
     micronaut-nats -------------------> micronaut-reactor
@@ -187,7 +188,7 @@ graph LR
     micronaut-azure -------------------> micronaut-reactor
     micronaut-azure -------------------------------------> micronaut-serde
     micronaut-azure -----> micronaut-servlet
-    micronaut-jms -------> micronaut-validation
+    micronaut-jms --------> micronaut-validation
     micronaut-discovery-client ----> micronaut-test
     micronaut-oracle-cloud ----> micronaut-groovy
     micronaut-oracle-cloud ------> micronaut-kotlin
@@ -235,7 +236,7 @@ graph LR
     micronaut-microstream --------> micronaut-cache
     micronaut-microstream ---------> micronaut-micrometer
     micronaut-microstream -------------------------------------> micronaut-serde
-    micronaut-microstream -------> micronaut-validation
+    micronaut-microstream --------> micronaut-validation
     micronaut-test-resources -----> micronaut-aws
     micronaut-test-resources -------> micronaut-data
     micronaut-test-resources --> micronaut-elasticsearch
@@ -258,7 +259,7 @@ graph LR
     micronaut-crac ----------> micronaut-sql
     micronaut-session --------> micronaut-cache
     micronaut-session -------------------------------------> micronaut-serde
-    linkStyle 3,15,22,27,29,30,32,35,68,70,72,77,80,91,94,118,119,131,132,135 stroke:red, stroke-width:4px
+    linkStyle 3,15,22,27,29,30,32,35,69,71,73,78,81,92,95,119,120,132,133,136 stroke:red, stroke-width:4px
 ```
 
-(Used a total of 289 API calls)
+(Used a total of 287 API calls)
