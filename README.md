@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 6 Mar 2023 06:09:22 GMT
+### Run at Mon, 6 Mar 2023 12:10:39 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-cassandra](https://github.com/micronaut-projects/micronaut-cassandra) | 6.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-cassandra/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cassandra/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-chatbots](https://github.com/micronaut-projects/micronaut-chatbots) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-chatbots/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-chatbots/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 3.8.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) |  3.8.3 |
-| 💚 | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-discovery-client](https://github.com/micronaut-projects/micronaut-discovery-client) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-discovery-client/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-discovery-client/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-elasticsearch](https://github.com/micronaut-projects/micronaut-elasticsearch) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-elasticsearch/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-elasticsearch/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -44,7 +44,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-jmx](https://github.com/micronaut-projects/micronaut-jmx) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-jmx/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jmx/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-kafka](https://github.com/micronaut-projects/micronaut-kafka) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-kafka/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kafka/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-kotlin](https://github.com/micronaut-projects/micronaut-kotlin) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-kotlin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kotlin/actions) | ✅ 4.0.0-SNAPSHOT |
-|  | [micronaut-kubernetes](https://github.com/micronaut-projects/micronaut-kubernetes) | 3.5.0-SNAPSHOT | 5.4.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-kubernetes/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kubernetes/actions) |  3.8.5 |
+|  | [micronaut-kubernetes](https://github.com/micronaut-projects/micronaut-kubernetes) | 3.5.0-SNAPSHOT | 5.4.0 | [![Build Status](https://github.com/micronaut-projects/micronaut-kubernetes/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kubernetes/actions) |  3.8.6 |
 | 💚 | [micronaut-liquibase](https://github.com/micronaut-projects/micronaut-liquibase) | 6.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-liquibase/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-liquibase/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-micrometer](https://github.com/micronaut-projects/micronaut-micrometer) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-micrometer/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-micrometer/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-microstream](https://github.com/micronaut-projects/micronaut-microstream) | 2.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-microstream/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-microstream/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -78,7 +78,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-toml](https://github.com/micronaut-projects/micronaut-toml) | 2.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-toml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-toml/actions) | ✅ 4.0.0-SNAPSHOT |
 |  | [micronaut-tracing](https://github.com/micronaut-projects/micronaut-tracing) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-tracing/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-tracing/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-validation](https://github.com/micronaut-projects/micronaut-validation) | 4.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-validation/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-validation/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-views](https://github.com/micronaut-projects/micronaut-views) | 4.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-views/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-views/actions) | ✅ 4.0.0-SNAPSHOT |
+|  | [micronaut-views](https://github.com/micronaut-projects/micronaut-views) | 4.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-views/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-views/actions) | ✅ 4.0.0-SNAPSHOT |
 
 ---
 ### Experimental dependency graph
