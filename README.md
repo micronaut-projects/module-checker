@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Sat, 18 Mar 2023 00:24:03 GMT
+### Run at Sat, 18 Mar 2023 06:08:37 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-azure](https://github.com/micronaut-projects/micronaut-azure) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-azure/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-azure/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-cache](https://github.com/micronaut-projects/micronaut-cache) | 4.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-cache/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cache/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-cassandra](https://github.com/micronaut-projects/micronaut-cassandra) | 6.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-cassandra/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cassandra/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-chatbots](https://github.com/micronaut-projects/micronaut-chatbots) | 2.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-chatbots/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-chatbots/actions) | ✅ 4.0.0-SNAPSHOT |
+Exception ReadTimeoutException for repo micronaut-chatbots
 |  | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 3.8.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) |  3.8.7 |
 | 💚 | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.0.0-SNAPSHOT | 6.3.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.3.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -284,4 +284,4 @@ graph LR
     linkStyle 3,16,23,24,28,31,32,34,37,74,76,78,85,88,92,102,106,108,134,135,144,152,153,156,185,186 stroke:red, stroke-width:4px
 ```
 
-(Used a total of 300 API calls)
+(Used a total of 298 API calls)
