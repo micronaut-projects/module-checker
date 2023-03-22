@@ -11,7 +11,7 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.system.exitProcess
 
-private const val REQUIRED_MICRONAUT_VERSION = "4.0.0-SNAPSHOT"
+private val REQUIRED_MICRONAUT_VERSION = """4\.0\.0.*""".toRegex()
 private const val PAGE_SIZE = 50
 
 @Command(
@@ -160,12 +160,12 @@ class ModuleCheckerCommand : Runnable {
     }
 
     private fun markdownOutput(projectVersion: String, version: String?, repo: GithubRepo, settingsVersion: String?, latestJavaCi: String?) =
-        StringBuilder("| ${if (version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") "💚" else ""}" +
+        StringBuilder("| ${if (REQUIRED_MICRONAUT_VERSION.matches(version ?: "") && latestJavaCi == "success") "💚" else ""}" +
                 " | [${repo.name}](https://github.com/micronaut-projects/${repo.name})" +
                 " | $projectVersion" +
                 " | $settingsVersion" +
                 " | [![Build Status](https://github.com/micronaut-projects/${repo.name}/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/${repo.name}/actions)" +
-                " | ${if (version == REQUIRED_MICRONAUT_VERSION) "✅" else ""} $version |")
+                " | ${if (REQUIRED_MICRONAUT_VERSION.matches(version ?: "")) "✅" else ""} $version |")
 
     private fun ansiOutput(
         projectVersion: String,
@@ -175,7 +175,7 @@ class ModuleCheckerCommand : Runnable {
         latestJavaCi: String?,
         settingsVersion: String?
     ): Ansi? = ansi()
-        .fg(if (version == REQUIRED_MICRONAUT_VERSION && latestJavaCi == "success") Ansi.Color.GREEN else Ansi.Color.RED)
+        .fg(if (REQUIRED_MICRONAUT_VERSION.matches(version ?: "") && latestJavaCi == "success") Ansi.Color.GREEN else Ansi.Color.RED)
         .a(repo.name.padEnd(width))
         .a("\t")
         .a("[$projectVersion]")
