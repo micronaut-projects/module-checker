@@ -14,14 +14,14 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Thu, 30 Mar 2023 12:10:00 GMT
+### Run at Thu, 30 Mar 2023 18:08:07 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
 | 💚 | [micronaut-acme](https://github.com/micronaut-projects/micronaut-acme) | 4.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-acme/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-acme/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-aot](https://github.com/micronaut-projects/micronaut-aot) | 2.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-aot/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aot/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-aws](https://github.com/micronaut-projects/micronaut-aws) | 4.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-aws/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-aws/actions) | ✅ 4.0.0-M1 |
-| 💚 | [micronaut-azure](https://github.com/micronaut-projects/micronaut-azure) | 5.0.0-SNAPSHOT | 6.2.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-azure/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-azure/actions) | ✅ 4.0.0-SNAPSHOT |
+| 💚 | [micronaut-azure](https://github.com/micronaut-projects/micronaut-azure) | 5.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-azure/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-azure/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-cache](https://github.com/micronaut-projects/micronaut-cache) | 4.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-cache/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cache/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-cassandra](https://github.com/micronaut-projects/micronaut-cassandra) | 6.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-cassandra/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cassandra/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-chatbots](https://github.com/micronaut-projects/micronaut-chatbots) | 2.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-chatbots/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-chatbots/actions) | ✅ 4.0.0-SNAPSHOT |
@@ -73,7 +73,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-session](https://github.com/micronaut-projects/micronaut-session) | 4.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-session/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-session/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) | 5.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-sql](https://github.com/micronaut-projects/micronaut-sql) | 5.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-sql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-sql/actions) | ✅ 4.0.0-M1 |
-|  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 3.8.8-SNAPSHOT | 5.4.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) |  3.8.8-SNAPSHOT |
+|  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 3.8.8-SNAPSHOT | 5.4.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) |  3.8.8 |
 | 💚 | [micronaut-test](https://github.com/micronaut-projects/micronaut-test) | 4.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-test/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-test-resources](https://github.com/micronaut-projects/micronaut-test-resources) | 2.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-test-resources/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test-resources/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-toml](https://github.com/micronaut-projects/micronaut-toml) | 2.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-toml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-toml/actions) | ✅ 4.0.0-M1 |
@@ -98,7 +98,7 @@ graph LR
     micronaut-kotlin --------------------------------------> micronaut-serde
     micronaut-spring ----------> micronaut-cache
     micronaut-spring -----> micronaut-views
-    micronaut-spring --------------------------------> micronaut-validation
+    micronaut-spring ---------------------------------> micronaut-validation
     micronaut-liquibase --------------------------------------> micronaut-serde
     micronaut-liquibase ----------> micronaut-sql
     micronaut-flyway ----------> micronaut-sql
@@ -107,7 +107,7 @@ graph LR
     micronaut-graphql ---------> micronaut-security
     micronaut-grpc --------------------> micronaut-reactor
     micronaut-grpc -----> micronaut-tracing
-    micronaut-grpc --------------------------------> micronaut-validation
+    micronaut-grpc ---------------------------------> micronaut-validation
     micronaut-kafka ----------> micronaut-cache
     micronaut-kafka ----------> micronaut-micrometer
     micronaut-kafka --------------------> micronaut-reactor
@@ -119,7 +119,7 @@ graph LR
     micronaut-micrometer -----------> micronaut-rxjava2
     micronaut-micrometer --------------------------------------> micronaut-serde
     micronaut-micrometer ----------> micronaut-sql
-    micronaut-micrometer --------------------------------> micronaut-validation
+    micronaut-micrometer ---------------------------------> micronaut-validation
     micronaut-sql ----------> micronaut-cache
     micronaut-sql --------> micronaut-data
     micronaut-sql ----------> micronaut-micrometer
@@ -128,15 +128,15 @@ graph LR
     micronaut-sql --------------------------------------> micronaut-serde
     micronaut-sql ----> micronaut-spring
     micronaut-sql ---> micronaut-test
-    micronaut-sql --------------------------------> micronaut-validation
+    micronaut-sql ---------------------------------> micronaut-validation
     micronaut-mongodb ----------> micronaut-micrometer
     micronaut-mongodb --------------------------------------> micronaut-serde
-    micronaut-mongodb --------------------------------> micronaut-validation
+    micronaut-mongodb ---------------------------------> micronaut-validation
     micronaut-redis ----------> micronaut-cache
     micronaut-redis ----------> micronaut-micrometer
     micronaut-redis --------------------------------------> micronaut-serde
     micronaut-redis ------> micronaut-session
-    micronaut-neo4j --------------------------------> micronaut-validation
+    micronaut-neo4j ---------------------------------> micronaut-validation
     micronaut-rabbitmq ----------> micronaut-micrometer
     micronaut-rabbitmq --------------------------------------> micronaut-serde
     micronaut-aws --> micronaut-discovery-client
@@ -145,22 +145,22 @@ graph LR
     micronaut-aws --------------------------------------> micronaut-serde
     micronaut-aws ---------> micronaut-security
     micronaut-aws -----> micronaut-views
-    micronaut-aws --------------------------------> micronaut-validation
+    micronaut-aws ---------------------------------> micronaut-validation
     micronaut-rss --------------------------------------> micronaut-serde
-    micronaut-rss --------------------------------> micronaut-validation
+    micronaut-rss ---------------------------------> micronaut-validation
     micronaut-gcp -----------> micronaut-rxjava2
     micronaut-gcp --------------------------------------> micronaut-serde
     micronaut-gcp -----> micronaut-servlet
     micronaut-gcp -----> micronaut-tracing
-    micronaut-gcp --------------------------------> micronaut-validation
+    micronaut-gcp ---------------------------------> micronaut-validation
     micronaut-acme --------------------------------------> micronaut-serde
-    micronaut-acme --------------------------------> micronaut-validation
+    micronaut-acme ---------------------------------> micronaut-validation
     micronaut-openapi ---------> micronaut-security
     micronaut-openapi --------------------------------------> micronaut-serde
     micronaut-openapi -----------> micronaut-rxjava2
     micronaut-openapi --> micronaut-rxjava3
     micronaut-openapi ----> micronaut-groovy
-    micronaut-openapi --------------------------------> micronaut-validation
+    micronaut-openapi ---------------------------------> micronaut-validation
     micronaut-openapi --------> micronaut-data
     micronaut-openapi ------> micronaut-kotlin
     micronaut-security ----> micronaut-multitenancy
@@ -169,12 +169,12 @@ graph LR
     micronaut-security -----> micronaut-servlet
     micronaut-security ------> micronaut-session
     micronaut-security -----> micronaut-views
-    micronaut-security --------------------------------> micronaut-validation
+    micronaut-security ---------------------------------> micronaut-validation
     micronaut-views ---------> micronaut-security
     micronaut-views --------------------------------------> micronaut-serde
-    micronaut-views --------------------------------> micronaut-validation
+    micronaut-views ---------------------------------> micronaut-validation
     micronaut-hibernate-validator --------------------------------------> micronaut-serde
-    micronaut-hibernate-validator --------------------------------> micronaut-validation
+    micronaut-hibernate-validator ---------------------------------> micronaut-validation
     micronaut-data --------------------> micronaut-reactor
     micronaut-data -----------> micronaut-rxjava2
     micronaut-data -----> micronaut-r2dbc
@@ -183,31 +183,32 @@ graph LR
     micronaut-data ----------> micronaut-sql
     micronaut-data ------> micronaut-kotlin
     micronaut-data ----> micronaut-multitenancy
-    micronaut-data --------------------------------> micronaut-validation
+    micronaut-data ---------------------------------> micronaut-validation
     micronaut-cache ----------> micronaut-micrometer
     micronaut-cache --------------------------------------> micronaut-serde
-    micronaut-cache --------------------------------> micronaut-validation
+    micronaut-cache ---------------------------------> micronaut-validation
     micronaut-nats ----------> micronaut-micrometer
     micronaut-nats --------------------> micronaut-reactor
     micronaut-nats --------------------------------------> micronaut-serde
     micronaut-jaxrs ---------> micronaut-security
     micronaut-jaxrs --------------------------------------> micronaut-serde
-    micronaut-jaxrs --------------------------------> micronaut-validation
+    micronaut-jaxrs ---------------------------------> micronaut-validation
     micronaut-servlet --------------------> micronaut-reactor
     micronaut-servlet ---------> micronaut-security
     micronaut-servlet ------> micronaut-session
-    micronaut-servlet --------------------------------> micronaut-validation
+    micronaut-servlet ---------------------------------> micronaut-validation
     micronaut-rxjava3 -----------> micronaut-rxjava2
     micronaut-reactor -----> micronaut-tracing
     micronaut-reactor --------------------------------------> micronaut-serde
-    micronaut-reactor --------------------------------> micronaut-validation
+    micronaut-reactor ---------------------------------> micronaut-validation
     micronaut-azure --------------------> micronaut-reactor
     micronaut-azure --------------------------------------> micronaut-serde
     micronaut-azure -----> micronaut-servlet
-    micronaut-jms --------------------------------> micronaut-validation
+    micronaut-azure ---------------------------------> micronaut-validation
+    micronaut-jms ---------------------------------> micronaut-validation
     micronaut-discovery-client --------------------------------------> micronaut-serde
     micronaut-discovery-client ---> micronaut-test
-    micronaut-discovery-client --------------------------------> micronaut-validation
+    micronaut-discovery-client ---------------------------------> micronaut-validation
     micronaut-oracle-cloud ----> micronaut-groovy
     micronaut-oracle-cloud ------> micronaut-kotlin
     micronaut-oracle-cloud ----------> micronaut-micrometer
@@ -216,13 +217,13 @@ graph LR
     micronaut-oracle-cloud --------------------------------------> micronaut-serde
     micronaut-oracle-cloud -----> micronaut-servlet
     micronaut-oracle-cloud ----------> micronaut-sql
-    micronaut-oracle-cloud --------------------------------> micronaut-validation
+    micronaut-oracle-cloud ---------------------------------> micronaut-validation
     micronaut-pulsar ----> micronaut-grpc
     micronaut-pulsar --> micronaut-logging
     micronaut-pulsar ----> micronaut-multitenancy
     micronaut-pulsar --------------------> micronaut-reactor
     micronaut-pulsar --------------------------------------> micronaut-serde
-    micronaut-pulsar --------------------------------> micronaut-validation
+    micronaut-pulsar ---------------------------------> micronaut-validation
     micronaut-mqtt --------------------------------------> micronaut-serde
     micronaut-r2dbc --------------------> micronaut-reactor
     micronaut-r2dbc -----------> micronaut-rxjava2
@@ -231,7 +232,7 @@ graph LR
     micronaut-r2dbc --------> micronaut-data
     micronaut-r2dbc ----------> micronaut-sql
     micronaut-r2dbc --> micronaut-flyway
-    micronaut-r2dbc --------------------------------> micronaut-validation
+    micronaut-r2dbc ---------------------------------> micronaut-validation
     micronaut-coherence ----------> micronaut-cache
     micronaut-coherence --------> micronaut-data
     micronaut-coherence ----> micronaut-grpc
@@ -240,17 +241,17 @@ graph LR
     micronaut-multitenancy --------------------------------------> micronaut-serde
     micronaut-multitenancy --------------------> micronaut-reactor
     micronaut-multitenancy ------> micronaut-session
-    micronaut-multitenancy --------------------------------> micronaut-validation
+    micronaut-multitenancy ---------------------------------> micronaut-validation
     micronaut-problem-json --------------------------------------> micronaut-serde
-    micronaut-problem-json --------------------------------> micronaut-validation
-    micronaut-rxjava2 --------------------------------> micronaut-validation
+    micronaut-problem-json ---------------------------------> micronaut-validation
+    micronaut-rxjava2 ---------------------------------> micronaut-validation
     micronaut-aot --> micronaut-picocli
     micronaut-serialization --------------------> micronaut-reactor
     micronaut-email -----> micronaut-aws
     micronaut-email --------------------> micronaut-reactor
     micronaut-email --------------------------------------> micronaut-serde
     micronaut-email -----> micronaut-views
-    micronaut-email --------------------------------> micronaut-validation
+    micronaut-email ---------------------------------> micronaut-validation
     micronaut-tracing ----> micronaut-grpc
     micronaut-tracing --------------------> micronaut-reactor
     micronaut-tracing -----------> micronaut-rxjava2
@@ -260,16 +261,16 @@ graph LR
     micronaut-object-storage ---> micronaut-azure
     micronaut-object-storage ---> micronaut-gcp
     micronaut-object-storage --> micronaut-oracle-cloud
-    micronaut-object-storage --------------------------------> micronaut-validation
+    micronaut-object-storage ---------------------------------> micronaut-validation
     micronaut-chatbots -----> micronaut-aws
     micronaut-chatbots ---> micronaut-azure
     micronaut-chatbots ---> micronaut-gcp
     micronaut-chatbots --------------------------------------> micronaut-serde
-    micronaut-chatbots --------------------------------> micronaut-validation
+    micronaut-chatbots ---------------------------------> micronaut-validation
     micronaut-microstream ----------> micronaut-cache
     micronaut-microstream ----------> micronaut-micrometer
     micronaut-microstream --------------------------------------> micronaut-serde
-    micronaut-microstream --------------------------------> micronaut-validation
+    micronaut-microstream ---------------------------------> micronaut-validation
     micronaut-test-resources -----> micronaut-aws
     micronaut-test-resources --------> micronaut-data
     micronaut-test-resources --> micronaut-elasticsearch
@@ -294,7 +295,7 @@ graph LR
     micronaut-crac ----------> micronaut-sql
     micronaut-session ----------> micronaut-cache
     micronaut-session --------------------------------------> micronaut-serde
-    linkStyle 3,16,23,24,28,31,32,34,37,76,78,80,87,90,94,104,108,110,138,139,153,161,162,165,195,196 stroke:red, stroke-width:4px
+    linkStyle 3,16,23,24,28,31,32,34,37,76,78,80,87,90,94,104,108,110,139,140,154,162,163,166,196,197 stroke:red, stroke-width:4px
 ```
 
 (Used a total of 311 API calls)
