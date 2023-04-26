@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Tue, 25 Apr 2023 18:08:30 GMT
+### Run at Wed, 26 Apr 2023 00:23:35 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-servlet](https://github.com/micronaut-projects/micronaut-servlet) | 4.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-servlet/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-servlet/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-session](https://github.com/micronaut-projects/micronaut-session) | 4.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-session/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-session/actions) | ✅ 4.0.0-M1 |
 |  | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) | 5.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) | ✅ 4.0.0-SNAPSHOT |
-| 💚 | [micronaut-sql](https://github.com/micronaut-projects/micronaut-sql) | 5.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-sql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-sql/actions) | ✅ 4.0.0-M1 |
+| 💚 | [micronaut-sql](https://github.com/micronaut-projects/micronaut-sql) | 5.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-sql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-sql/actions) | ✅ 4.0.0-M2 |
 |  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 3.9.1-SNAPSHOT | 5.4.8 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) |  3.9.1-SNAPSHOT |
 | 💚 | [micronaut-test](https://github.com/micronaut-projects/micronaut-test) | 4.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-test/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test/actions) | ✅ 4.0.0-M2 |
 |  | [micronaut-test-resources](https://github.com/micronaut-projects/micronaut-test-resources) | 2.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-test-resources/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test-resources/actions) | ✅ 4.0.0-M1 |
@@ -130,7 +130,6 @@ graph LR
     micronaut-sql -----> micronaut-r2dbc
     micronaut-sql ---------------------------------------> micronaut-serde
     micronaut-sql ----> micronaut-spring
-    micronaut-sql ---> micronaut-test
     micronaut-sql ------------------------------------> micronaut-validation
     micronaut-mongodb ----------> micronaut-micrometer
     micronaut-mongodb ---------------------------------------> micronaut-serde
@@ -214,7 +213,7 @@ graph LR
     micronaut-azure ------------------------------------> micronaut-validation
     micronaut-jms ------------------------------------> micronaut-validation
     micronaut-discovery-client ---------------------------------------> micronaut-serde
-    micronaut-discovery-client ---> micronaut-test
+    micronaut-discovery-client --> micronaut-test
     micronaut-discovery-client ------------------------------------> micronaut-validation
     micronaut-oracle-cloud -----> micronaut-groovy
     micronaut-oracle-cloud ------> micronaut-kotlin
@@ -303,7 +302,7 @@ graph LR
     micronaut-crac ----------> micronaut-sql
     micronaut-session ----------> micronaut-cache
     micronaut-session ---------------------------------------> micronaut-serde
-    linkStyle 3,19,26,27,31,34,35,37,40,83,85,87,94,97,101,111,115,117,147,148,162,170,171,174,204,205 stroke:red, stroke-width:4px
+    linkStyle 19,26,27,31,34,35,37,82,84,86,93,96,100,110,114,116,146,147,161,169,170,173,203,204 stroke:red, stroke-width:4px
 ```
 
 (Used a total of 313 API calls)
