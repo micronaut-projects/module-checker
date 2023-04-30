@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Sun, 30 Apr 2023 00:25:59 GMT
+### Run at Sun, 30 Apr 2023 06:07:38 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-kotlin](https://github.com/micronaut-projects/micronaut-kotlin) | 4.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-kotlin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kotlin/actions) | ✅ 4.0.0-M2 |
 |  | [micronaut-kubernetes](https://github.com/micronaut-projects/micronaut-kubernetes) | 5.0.0-M1 | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-kubernetes/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kubernetes/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-liquibase](https://github.com/micronaut-projects/micronaut-liquibase) | 6.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-liquibase/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-liquibase/actions) | ✅ 4.0.0-M2 |
-| 💚 | [micronaut-logging](https://github.com/micronaut-projects/micronaut-logging) | 1.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-logging/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-logging/actions) | ✅ 4.0.0-M1 |
+|  | [micronaut-logging](https://github.com/micronaut-projects/micronaut-logging) | 1.0.0-SNAPSHOT | 6.3.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-logging/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-logging/actions) | ✅ 4.0.0-M1 |
 |  | [micronaut-micrometer](https://github.com/micronaut-projects/micronaut-micrometer) | 5.0.0-M1 | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-micrometer/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-micrometer/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-microstream](https://github.com/micronaut-projects/micronaut-microstream) | 2.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-microstream/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-microstream/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-mongodb](https://github.com/micronaut-projects/micronaut-mongodb) | 5.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-mongodb/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-mongodb/actions) | ✅ 4.0.0-M2 |
