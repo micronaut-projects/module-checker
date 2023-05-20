@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Fri, 19 May 2023 18:07:46 GMT
+### Run at Sat, 20 May 2023 00:22:06 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-cache](https://github.com/micronaut-projects/micronaut-cache) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-cache/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cache/actions) | ✅ 4.0.0-M4 |
 | 💚 | [micronaut-cassandra](https://github.com/micronaut-projects/micronaut-cassandra) | 6.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-cassandra/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-cassandra/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-chatbots](https://github.com/micronaut-projects/micronaut-chatbots) | 2.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-chatbots/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-chatbots/actions) | ✅ 4.0.0-M2 |
-| 💚 | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 4.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) | ✅ 4.0.0-M1 |
+| 💚 | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) | ✅ 4.0.0-M1 |
 | 💚 | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-discovery-client](https://github.com/micronaut-projects/micronaut-discovery-client) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-discovery-client/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-discovery-client/actions) | ✅ 4.0.0-M2 |
@@ -38,7 +38,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-groovy](https://github.com/micronaut-projects/micronaut-groovy) | 4.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-groovy/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-groovy/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-grpc](https://github.com/micronaut-projects/micronaut-grpc) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-grpc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-grpc/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-hibernate-validator](https://github.com/micronaut-projects/micronaut-hibernate-validator) | 4.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-hibernate-validator/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-hibernate-validator/actions) | ✅ 4.0.0-M2 |
-| 💚 | [micronaut-jackson-xml](https://github.com/micronaut-projects/micronaut-jackson-xml) | 4.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-jackson-xml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jackson-xml/actions) | ✅ 4.0.0-M2 |
+| 💚 | [micronaut-jackson-xml](https://github.com/micronaut-projects/micronaut-jackson-xml) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-jackson-xml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jackson-xml/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-jaxrs](https://github.com/micronaut-projects/micronaut-jaxrs) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-jaxrs/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jaxrs/actions) | ✅ 4.0.0-M4 |
 | 💚 | [micronaut-jms](https://github.com/micronaut-projects/micronaut-jms) | 3.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-jms/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jms/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-jmx](https://github.com/micronaut-projects/micronaut-jmx) | 4.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-jmx/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jmx/actions) | ✅ 4.0.0-M2 |
@@ -57,7 +57,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-object-storage](https://github.com/micronaut-projects/micronaut-object-storage) | 2.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-object-storage/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-object-storage/actions) | ✅ 4.0.0-M4 |
 | 💚 | [micronaut-openapi](https://github.com/micronaut-projects/micronaut-openapi) | 5.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-openapi/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-openapi/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-oracle-cloud](https://github.com/micronaut-projects/micronaut-oracle-cloud) | 3.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-oracle-cloud/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-oracle-cloud/actions) | ✅ 4.0.0-M4 |
-| 💚 | [micronaut-picocli](https://github.com/micronaut-projects/micronaut-picocli) | 5.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-picocli/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-picocli/actions) | ✅ 4.0.0-M2 |
+| 💚 | [micronaut-picocli](https://github.com/micronaut-projects/micronaut-picocli) | 5.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-picocli/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-picocli/actions) | ✅ 4.0.0-M4 |
 | 💚 | [micronaut-problem-json](https://github.com/micronaut-projects/micronaut-problem-json) | 3.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-problem-json/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-problem-json/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-pulsar](https://github.com/micronaut-projects/micronaut-pulsar) | 2.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-pulsar/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-pulsar/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-r2dbc](https://github.com/micronaut-projects/micronaut-r2dbc) | 5.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-r2dbc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-r2dbc/actions) | ✅ 4.0.0-M3 |
@@ -73,7 +73,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 | 💚 | [micronaut-session](https://github.com/micronaut-projects/micronaut-session) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-session/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-session/actions) | ✅ 4.0.0-M4 |
 | 💚 | [micronaut-spring](https://github.com/micronaut-projects/micronaut-spring) | 5.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-spring/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-spring/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-sql](https://github.com/micronaut-projects/micronaut-sql) | 5.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-sql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-sql/actions) | ✅ 4.0.0-M2 |
-|  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 4.0.0-M2 | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) | ✅ 4.0.0-SNAPSHOT |
+|  | [micronaut-starter](https://github.com/micronaut-projects/micronaut-starter) | 4.0.0-M2 | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-starter/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-starter/actions) | ✅ 4.0.0-SNAPSHOT |
 | 💚 | [micronaut-test](https://github.com/micronaut-projects/micronaut-test) | 4.0.0-SNAPSHOT | 6.4.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-test/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test/actions) | ✅ 4.0.0-M4 |
 | 💚 | [micronaut-test-resources](https://github.com/micronaut-projects/micronaut-test-resources) | 2.0.0-SNAPSHOT | 6.4.2 | [![Build Status](https://github.com/micronaut-projects/micronaut-test-resources/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-test-resources/actions) | ✅ 4.0.0-M2 |
 | 💚 | [micronaut-toml](https://github.com/micronaut-projects/micronaut-toml) | 2.0.0-SNAPSHOT | 6.4.1 | [![Build Status](https://github.com/micronaut-projects/micronaut-toml/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-toml/actions) | ✅ 4.0.0-M2 |
@@ -135,7 +135,7 @@ graph LR
     micronaut-mongodb ----------> micronaut-micrometer
     micronaut-mongodb ----------------------------------------> micronaut-serde
     micronaut-mongodb ------------------------------------> micronaut-validation
-    micronaut-redis ---------------> micronaut-logging
+    micronaut-redis ----------------> micronaut-logging
     micronaut-redis ----------> micronaut-cache
     micronaut-redis ----------> micronaut-micrometer
     micronaut-redis ----------------------------------------> micronaut-serde
@@ -157,12 +157,13 @@ graph LR
     micronaut-gcp -----> micronaut-servlet
     micronaut-gcp -----> micronaut-tracing
     micronaut-gcp ------------------------------------> micronaut-validation
-    micronaut-kubernetes ---------------> micronaut-logging
+    micronaut-kubernetes ----------------> micronaut-logging
     micronaut-kubernetes ----------------------> micronaut-reactor
     micronaut-kubernetes ----------------------------------------> micronaut-serde
     micronaut-kubernetes ------------------------------------> micronaut-validation
     micronaut-acme ----------------------------------------> micronaut-serde
     micronaut-acme ------------------------------------> micronaut-validation
+    micronaut-openapi ----------------> micronaut-logging
     micronaut-openapi ---------> micronaut-security
     micronaut-openapi ----------------------------------------> micronaut-serde
     micronaut-openapi -----------> micronaut-rxjava2
@@ -178,7 +179,7 @@ graph LR
     micronaut-security ------> micronaut-session
     micronaut-security -----> micronaut-views
     micronaut-security ------------------------------------> micronaut-validation
-    micronaut-security ---------------> micronaut-logging
+    micronaut-security ----------------> micronaut-logging
     micronaut-views ---------> micronaut-security
     micronaut-views ----------------------------------------> micronaut-serde
     micronaut-views ------------------------------------> micronaut-validation
@@ -194,7 +195,7 @@ graph LR
     micronaut-data ----> micronaut-multitenancy
     micronaut-data --> micronaut-testresources
     micronaut-data ------------------------------------> micronaut-validation
-    micronaut-cache ---------------> micronaut-logging
+    micronaut-cache ----------------> micronaut-logging
     micronaut-cache ----------> micronaut-micrometer
     micronaut-cache ----------------------------------------> micronaut-serde
     micronaut-cache ------------------------------------> micronaut-validation
@@ -208,10 +209,10 @@ graph LR
     micronaut-servlet ---------> micronaut-security
     micronaut-servlet ------> micronaut-session
     micronaut-servlet ------------------------------------> micronaut-validation
-    micronaut-servlet ---------------> micronaut-logging
+    micronaut-servlet ----------------> micronaut-logging
     micronaut-rxjava3 -----------> micronaut-rxjava2
     micronaut-reactor -----> micronaut-tracing
-    micronaut-reactor ---------------> micronaut-logging
+    micronaut-reactor ----------------> micronaut-logging
     micronaut-reactor ----------------------------------------> micronaut-serde
     micronaut-reactor ------------------------------------> micronaut-validation
     micronaut-azure ----------------------> micronaut-reactor
@@ -224,7 +225,7 @@ graph LR
     micronaut-discovery-client ------------------------------------> micronaut-validation
     micronaut-oracle-cloud -----> micronaut-groovy
     micronaut-oracle-cloud ------> micronaut-kotlin
-    micronaut-oracle-cloud ---------------> micronaut-logging
+    micronaut-oracle-cloud ----------------> micronaut-logging
     micronaut-oracle-cloud ----------> micronaut-micrometer
     micronaut-oracle-cloud ----------------------> micronaut-reactor
     micronaut-oracle-cloud -----------> micronaut-rxjava2
@@ -233,12 +234,12 @@ graph LR
     micronaut-oracle-cloud ----------> micronaut-sql
     micronaut-oracle-cloud ------------------------------------> micronaut-validation
     micronaut-pulsar ----> micronaut-grpc
-    micronaut-pulsar ---------------> micronaut-logging
+    micronaut-pulsar ----------------> micronaut-logging
     micronaut-pulsar ----> micronaut-multitenancy
     micronaut-pulsar ----------------------> micronaut-reactor
     micronaut-pulsar ----------------------------------------> micronaut-serde
     micronaut-pulsar ------------------------------------> micronaut-validation
-    micronaut-mqtt ---------------> micronaut-logging
+    micronaut-mqtt ----------------> micronaut-logging
     micronaut-mqtt ----------------------------------------> micronaut-serde
     micronaut-mqtt ----------------------> micronaut-reactor
     micronaut-mqtt ------------------------------------> micronaut-validation
@@ -250,7 +251,7 @@ graph LR
     micronaut-r2dbc ----------> micronaut-sql
     micronaut-r2dbc --> micronaut-flyway
     micronaut-r2dbc ------------------------------------> micronaut-validation
-    micronaut-r2dbc ---------------> micronaut-logging
+    micronaut-r2dbc ----------------> micronaut-logging
     micronaut-coherence ----------> micronaut-cache
     micronaut-coherence ---------> micronaut-data
     micronaut-coherence ----> micronaut-grpc
@@ -265,7 +266,7 @@ graph LR
     micronaut-rxjava2 ------------------------------------> micronaut-validation
     micronaut-aot --> micronaut-picocli
     micronaut-serialization ----------------------> micronaut-reactor
-    micronaut-serialization ---------------> micronaut-logging
+    micronaut-serialization ----------------> micronaut-logging
     micronaut-email -----> micronaut-aws
     micronaut-email ----------------------> micronaut-reactor
     micronaut-email ----------------------------------------> micronaut-serde
@@ -277,7 +278,7 @@ graph LR
     micronaut-tracing ----------------------------------------> micronaut-serde
     micronaut-tracing ---> micronaut-kafka
     micronaut-object-storage -----> micronaut-aws
-    micronaut-object-storage ---------------> micronaut-logging
+    micronaut-object-storage ----------------> micronaut-logging
     micronaut-object-storage ---> micronaut-azure
     micronaut-object-storage ---> micronaut-gcp
     micronaut-object-storage --> micronaut-oracle-cloud
@@ -308,16 +309,16 @@ graph LR
     micronaut-test-resources ----------> micronaut-sql
     micronaut-validation ----------------------> micronaut-reactor
     micronaut-validation -----------> micronaut-rxjava2
-    micronaut-validation ---------------> micronaut-logging
+    micronaut-validation ----------------> micronaut-logging
     micronaut-crac ----------> micronaut-cache
     micronaut-crac ---------> micronaut-data
     micronaut-crac ---> micronaut-redis
     micronaut-crac ----------------------------------------> micronaut-serde
     micronaut-crac ----------> micronaut-sql
-    micronaut-session ---------------> micronaut-logging
+    micronaut-session ----------------> micronaut-logging
     micronaut-session ----------> micronaut-cache
     micronaut-session ----------------------------------------> micronaut-serde
-    linkStyle 20,27,28,32,35,36,38,84,86,89,96,99,105,115,120,123,156,157,172,181,182,185,216,217 stroke:red, stroke-width:4px
+    linkStyle 20,27,28,32,35,36,38,85,87,90,97,100,106,116,121,124,157,158,173,182,183,186,217,218 stroke:red, stroke-width:4px
 ```
 
 (Used a total of 313 API calls)
