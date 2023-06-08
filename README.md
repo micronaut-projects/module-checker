@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Wed, 7 Jun 2023 18:07:30 GMT
+### Run at Thu, 8 Jun 2023 00:26:00 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -210,6 +210,7 @@ graph LR
     micronaut-data ------------------------------------> micronaut-validation
     micronaut-data -------------------------------> micronaut-logging
     micronaut-data --> micronaut-mongo
+    micronaut-data ---> micronaut-flyway
     micronaut-cache ----------> micronaut-micrometer
     micronaut-cache -----------------------------------------> micronaut-serde
     micronaut-cache ------------------------------------> micronaut-validation
@@ -266,7 +267,7 @@ graph LR
     micronaut-r2dbc ------> micronaut-kotlin
     micronaut-r2dbc ---------> micronaut-data
     micronaut-r2dbc -----------> micronaut-sql
-    micronaut-r2dbc --> micronaut-flyway
+    micronaut-r2dbc ---> micronaut-flyway
     micronaut-r2dbc ------------------------------------> micronaut-validation
     micronaut-r2dbc -------------------------------> micronaut-logging
     micronaut-coherence ----------> micronaut-cache
@@ -343,7 +344,7 @@ graph LR
     micronaut-session -------------------------------> micronaut-logging
     micronaut-session ----------> micronaut-cache
     micronaut-session -----------------------------------------> micronaut-serde
-    linkStyle 23,30,31,35,39,40,42,93,95,99,107,110,117,129,134,137,171,172,188,198,199,202,238,239 stroke:red, stroke-width:4px
+    linkStyle 23,30,31,35,39,40,42,93,95,99,107,110,118,130,135,138,172,173,189,199,200,203,239,240 stroke:red, stroke-width:4px
 ```
 
 (Used a total of 337 API calls)
