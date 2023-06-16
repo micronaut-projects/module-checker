@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Fri, 16 Jun 2023 12:09:03 GMT
+### Run at Fri, 16 Jun 2023 18:07:44 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -233,13 +233,14 @@ graph LR
     micronaut-reactor -----------------------------> micronaut-logging
     micronaut-reactor -----------------------------------------> micronaut-serde
     micronaut-reactor ------------------------------------> micronaut-validation
+    micronaut-reactor ---> micronaut-test
     micronaut-azure ------------------------> micronaut-reactor
     micronaut-azure -----------------------------------------> micronaut-serde
     micronaut-azure ------> micronaut-servlet
     micronaut-azure ------------------------------------> micronaut-validation
     micronaut-jms ------------------------------------> micronaut-validation
     micronaut-discovery-client -----------------------------------------> micronaut-serde
-    micronaut-discovery-client --> micronaut-test
+    micronaut-discovery-client ---> micronaut-test
     micronaut-discovery-client ------------------------------------> micronaut-validation
     micronaut-oracle-cloud -----> micronaut-groovy
     micronaut-oracle-cloud ------> micronaut-kotlin
@@ -344,7 +345,7 @@ graph LR
     micronaut-session -----------------------------> micronaut-logging
     micronaut-session ----------> micronaut-cache
     micronaut-session -----------------------------------------> micronaut-serde
-    linkStyle 25,32,33,37,41,42,44,95,97,101,109,112,119,131,136,139,173,174,190,200,201,205,240,241 stroke:red, stroke-width:4px
+    linkStyle 4,25,32,33,37,41,42,44,95,97,101,109,112,119,131,136,139,140,174,175,191,201,202,206,241,242 stroke:red, stroke-width:4px
 ```
 
 (Used a total of 337 API calls)
