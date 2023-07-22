@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Sat, 22 Jul 2023 12:09:02 GMT
+### Run at Sat, 22 Jul 2023 18:07:53 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-docs-mn3](https://github.com/micronaut-projects/micronaut-docs-mn3) | unknown | unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-docs-mn3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-docs-mn3/actions) |  null |
 | 💚 | [micronaut-elasticsearch](https://github.com/micronaut-projects/micronaut-elasticsearch) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-elasticsearch/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-elasticsearch/actions) | ✅ 4.0.0 |
 | 💚 | [micronaut-email](https://github.com/micronaut-projects/micronaut-email) | 2.0.3-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-email/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-email/actions) | ✅ 4.0.0 |
-| 💚 | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | 6.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) | ✅ 4.0.0 |
+Exception HttpClientResponseException for repo micronaut-flyway
 | 💚 | [micronaut-gcp](https://github.com/micronaut-projects/micronaut-gcp) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) | ✅ 4.0.0 |
 |  | [micronaut-gradle-plugin](https://github.com/micronaut-projects/micronaut-gradle-plugin) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-gradle-plugin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gradle-plugin/actions) |  UNKNOWN |
 | 💚 | [micronaut-graphql](https://github.com/micronaut-projects/micronaut-graphql) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-graphql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-graphql/actions) | ✅ 4.0.0 |
@@ -351,4 +351,4 @@ graph LR
     linkStyle 4,26,33,34,38,42,43,45,94,96,100,108,111,118,130,135,138,139,172,173,189,200,201,205,240,241 stroke:red, stroke-width:4px
 ```
 
-(Used a total of 349 API calls)
+(Used a total of 348 API calls)
