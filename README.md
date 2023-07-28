@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Thu, 27 Jul 2023 18:07:45 GMT
+### Run at Fri, 28 Jul 2023 00:24:48 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -34,7 +34,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-docs-mn2](https://github.com/micronaut-projects/micronaut-docs-mn2) | unknown | unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-docs-mn2/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-docs-mn2/actions) |  null |
 |  | [micronaut-docs-mn3](https://github.com/micronaut-projects/micronaut-docs-mn3) | unknown | unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-docs-mn3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-docs-mn3/actions) |  null |
 | 💚 | [micronaut-elasticsearch](https://github.com/micronaut-projects/micronaut-elasticsearch) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-elasticsearch/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-elasticsearch/actions) | ✅ 4.0.0 |
-|  | [micronaut-email](https://github.com/micronaut-projects/micronaut-email) | 2.0.3-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-email/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-email/actions) |  4.0.1 |
+|  | [micronaut-email](https://github.com/micronaut-projects/micronaut-email) | 2.1.0-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-email/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-email/actions) |  4.0.1 |
 | 💚 | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | 6.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) | ✅ 4.0.0 |
 | 💚 | [micronaut-gcp](https://github.com/micronaut-projects/micronaut-gcp) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) | ✅ 4.0.0 |
 |  | [micronaut-gradle-plugin](https://github.com/micronaut-projects/micronaut-gradle-plugin) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-gradle-plugin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gradle-plugin/actions) |  UNKNOWN |
