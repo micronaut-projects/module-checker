@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Wed, 2 Aug 2023 12:09:44 GMT
+### Run at Wed, 2 Aug 2023 18:07:39 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -64,9 +64,9 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-oracle-cloud](https://github.com/micronaut-projects/micronaut-oracle-cloud) | 3.0.3-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-oracle-cloud/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-oracle-cloud/actions) | ✅ 4.0.0 |
 |  | [micronaut-picocli](https://github.com/micronaut-projects/micronaut-picocli) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-picocli/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-picocli/actions) |  4.0.2 |
 |  | [micronaut-problem-json](https://github.com/micronaut-projects/micronaut-problem-json) | 3.0.3-SNAPSHOT | 6.5.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-problem-json/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-problem-json/actions) |  4.0.2 |
-|  | [micronaut-pulsar](https://github.com/micronaut-projects/micronaut-pulsar) | 2.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-pulsar/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-pulsar/actions) |  4.0.1 |
+|  | [micronaut-pulsar](https://github.com/micronaut-projects/micronaut-pulsar) | 2.0.2-SNAPSHOT | 6.5.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-pulsar/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-pulsar/actions) |  4.0.2 |
 | 💚 | [micronaut-r2dbc](https://github.com/micronaut-projects/micronaut-r2dbc) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-r2dbc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-r2dbc/actions) | ✅ 4.0.0 |
-|  | [micronaut-rabbitmq](https://github.com/micronaut-projects/micronaut-rabbitmq) | 4.0.3-SNAPSHOT | 6.5.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-rabbitmq/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rabbitmq/actions) |  4.0.2 |
+|  | [micronaut-rabbitmq](https://github.com/micronaut-projects/micronaut-rabbitmq) | 4.1.0-SNAPSHOT | 6.5.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-rabbitmq/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rabbitmq/actions) |  4.0.2 |
 | 💚 | [micronaut-reactor](https://github.com/micronaut-projects/micronaut-reactor) | 3.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-reactor/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-reactor/actions) | ✅ 4.0.0 |
 |  | [micronaut-redis](https://github.com/micronaut-projects/micronaut-redis) | 6.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-redis/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-redis/actions) |  4.0.2 |
 |  | [micronaut-rss](https://github.com/micronaut-projects/micronaut-rss) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-rss/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rss/actions) |  4.0.1 |
