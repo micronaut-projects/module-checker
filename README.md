@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 11 Sep 2023 18:08:31 GMT
+### Run at Tue, 12 Sep 2023 00:21:00 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-jhipster](https://github.com/micronaut-projects/micronaut-jhipster) | 1.0.0-SNAPSHOT | 6.5.4 | [![Build Status](https://github.com/micronaut-projects/micronaut-jhipster/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jhipster/actions) |  3.8.7 |
 | 💚 | [micronaut-jms](https://github.com/micronaut-projects/micronaut-jms) | 3.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-jms/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jms/actions) | ✅ 4.0.0 |
 | 💚 | [micronaut-jmx](https://github.com/micronaut-projects/micronaut-jmx) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-jmx/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-jmx/actions) | ✅ 4.0.0 |
-|  | [micronaut-kafka](https://github.com/micronaut-projects/micronaut-kafka) | 5.1.2-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-kafka/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kafka/actions) |  4.1.3 |
+|  | [micronaut-kafka](https://github.com/micronaut-projects/micronaut-kafka) | 5.1.3-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-kafka/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kafka/actions) |  4.1.3 |
 |  | [micronaut-kotlin](https://github.com/micronaut-projects/micronaut-kotlin) | 4.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-kotlin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kotlin/actions) |  4.1.2 |
 |  | [micronaut-kubernetes](https://github.com/micronaut-projects/micronaut-kubernetes) | 5.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-kubernetes/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-kubernetes/actions) |  4.0.1 |
 |  | [micronaut-liquibase](https://github.com/micronaut-projects/micronaut-liquibase) | 6.1.0-SNAPSHOT | 6.5.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-liquibase/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-liquibase/actions) |  4.1.2 |
@@ -62,7 +62,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-neo4j](https://github.com/micronaut-projects/micronaut-neo4j) | 6.1.1-SNAPSHOT | 6.5.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-neo4j/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-neo4j/actions) |  4.1.2 |
 |  | [micronaut-object-storage](https://github.com/micronaut-projects/micronaut-object-storage) | 2.0.4-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-object-storage/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-object-storage/actions) |  4.0.2 |
 |  | [micronaut-openapi](https://github.com/micronaut-projects/micronaut-openapi) | 6.0.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-openapi/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-openapi/actions) |  4.1.2 |
-|  | [micronaut-oracle-cloud](https://github.com/micronaut-projects/micronaut-oracle-cloud) | 3.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-oracle-cloud/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-oracle-cloud/actions) |  4.0.4 |
+|  | [micronaut-oracle-cloud](https://github.com/micronaut-projects/micronaut-oracle-cloud) | 3.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-oracle-cloud/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-oracle-cloud/actions) |  4.1.3 |
 |  | [micronaut-picocli](https://github.com/micronaut-projects/micronaut-picocli) | 5.0.2-SNAPSHOT | 6.5.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-picocli/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-picocli/actions) |  4.1.2 |
 |  | [micronaut-problem-json](https://github.com/micronaut-projects/micronaut-problem-json) | 3.1.0-SNAPSHOT | 6.5.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-problem-json/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-problem-json/actions) |  4.1.2 |
 |  | [micronaut-pulsar](https://github.com/micronaut-projects/micronaut-pulsar) | 2.0.2-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-pulsar/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-pulsar/actions) |  4.1.3 |
