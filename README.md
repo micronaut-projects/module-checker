@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Tue, 12 Sep 2023 18:08:36 GMT
+### Run at Wed, 13 Sep 2023 00:22:18 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-coherence](https://github.com/micronaut-projects/micronaut-coherence) | 4.0.1-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-coherence/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-coherence/actions) |  4.1.3 |
 |  | [micronaut-control-panel](https://github.com/micronaut-projects/micronaut-control-panel) | 1.0.2-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-control-panel/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-control-panel/actions) |  4.0.2 |
 |  | [micronaut-crac](https://github.com/micronaut-projects/micronaut-crac) | 2.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-crac/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-crac/actions) |  4.1.3 |
-|  | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.1.3-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) |  4.1.3 |
+|  | [micronaut-data](https://github.com/micronaut-projects/micronaut-data) | 4.1.3-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-data/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-data/actions) |  4.1.4 |
 |  | [micronaut-discovery-client](https://github.com/micronaut-projects/micronaut-discovery-client) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-discovery-client/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-discovery-client/actions) | ✅ 4.0.0 |
 |  | [micronaut-docs-mn1](https://github.com/micronaut-projects/micronaut-docs-mn1) | unknown | unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-docs-mn1/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-docs-mn1/actions) |  null |
 |  | [micronaut-docs-mn2](https://github.com/micronaut-projects/micronaut-docs-mn2) | unknown | unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-docs-mn2/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-docs-mn2/actions) |  null |
