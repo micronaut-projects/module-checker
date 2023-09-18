@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 18 Sep 2023 00:22:41 GMT
+### Run at Mon, 18 Sep 2023 06:08:40 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-redis](https://github.com/micronaut-projects/micronaut-redis) | 6.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-redis/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-redis/actions) |  4.1.3 |
 |  | [micronaut-rss](https://github.com/micronaut-projects/micronaut-rss) | 4.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-rss/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rss/actions) |  4.1.3 |
 |  | [micronaut-rxjava2](https://github.com/micronaut-projects/micronaut-rxjava2) | 2.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava2/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava2/actions) | ✅ 4.0.0 |
-| 💚 | [micronaut-rxjava3](https://github.com/micronaut-projects/micronaut-rxjava3) | 3.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava3/actions) | ✅ 4.0.0 |
+|  | [micronaut-rxjava3](https://github.com/micronaut-projects/micronaut-rxjava3) | 3.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-rxjava3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-rxjava3/actions) | ✅ 4.0.0 |
 |  | [micronaut-security](https://github.com/micronaut-projects/micronaut-security) | 4.1.1-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-security/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-security/actions) |  4.1.4 |
 |  | [micronaut-serialization](https://github.com/micronaut-projects/micronaut-serialization) | 2.2.5-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-serialization/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-serialization/actions) |  4.1.3 |
 |  | [micronaut-servlet](https://github.com/micronaut-projects/micronaut-servlet) | 4.1.2-SNAPSHOT | 6.5.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-servlet/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-servlet/actions) |  4.1.2 |
