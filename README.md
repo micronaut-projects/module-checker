@@ -14,7 +14,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 
 ---
 
-### Run at Mon, 25 Sep 2023 12:14:33 GMT
+### Run at Mon, 25 Sep 2023 18:07:50 GMT
 
 | | Repository | Project Version | Settings Version | Status | Micronaut Version |
 | --- | --- | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ Will print module name (in green if master is on 4.0.0-SNAPSHOT), a tick if the 
 |  | [micronaut-flyway](https://github.com/micronaut-projects/micronaut-flyway) | 6.2.1-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-flyway/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-flyway/actions) |  4.1.5 |
 |  | [micronaut-gcp](https://github.com/micronaut-projects/micronaut-gcp) | 5.1.1-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-gcp/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gcp/actions) |  4.1.5 |
 |  | [micronaut-gradle-plugin](https://github.com/micronaut-projects/micronaut-gradle-plugin) | 4.1.2-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-gradle-plugin/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-gradle-plugin/actions) |  UNKNOWN |
-|  | [micronaut-graphql](https://github.com/micronaut-projects/micronaut-graphql) | 4.1.0-SNAPSHOT | 6.5.5 | [![Build Status](https://github.com/micronaut-projects/micronaut-graphql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-graphql/actions) |  4.1.0 |
+|  | [micronaut-graphql](https://github.com/micronaut-projects/micronaut-graphql) | 4.1.0-SNAPSHOT | 6.5.6 | [![Build Status](https://github.com/micronaut-projects/micronaut-graphql/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-graphql/actions) |  4.1.6 |
 |  | [micronaut-groovy](https://github.com/micronaut-projects/micronaut-groovy) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-groovy/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-groovy/actions) | ✅ 4.0.0 |
 |  | [micronaut-grpc](https://github.com/micronaut-projects/micronaut-grpc) | 4.0.2-SNAPSHOT | 6.5.3 | [![Build Status](https://github.com/micronaut-projects/micronaut-grpc/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-grpc/actions) | ✅ 4.0.0 |
 |  | [micronaut-guides-mn3](https://github.com/micronaut-projects/micronaut-guides-mn3) | unknown | unknown | [![Build Status](https://github.com/micronaut-projects/micronaut-guides-mn3/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-guides-mn3/actions) |  null |
